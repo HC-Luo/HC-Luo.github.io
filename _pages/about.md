@@ -46,7 +46,7 @@ My research approaches include time series analysis such as linear regressions a
 - *2023.12*, Poster presentation at AGU (American Geophysical Union, The Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates: Jet Streams, Storm Tracks, Stationary Waves, and Monsoons  session), San Francisco, CA, USA.
 - *2023.01*, Oral presentation at 103rd AMS (American Meteorological Society, 11th Symposium on the Madden-Julian Oscillation and Sub-Seasonal Monsoon Variability), Denver, CO, USA. 
 - *2022.12*, Poster presentation at AGU (Atmosphere, Ocean, and Land Processes in the Maritime Continent and Indo-Pacific session), Chicago, IL, USA.
-- *2022.10*, Oral presentation at the \| [\[department seminar\]](https://youtu.be/iA7BUL5gc94) of the Atmospheric and Oceanic Sciences Department, University of Wisconsin, Madison, WI, USA.
+- *2022.10*, Oral presentation at the [\[department seminar\]](https://youtu.be/iA7BUL5gc94) of the Atmospheric and Oceanic Sciences Department, University of Wisconsin, Madison, WI, USA.
 - *2020.01*, Poster presentation at 100th AMS (33rd Conference on Climate Variability and Change), Boston, MA, USA.
 
 # Working experience
