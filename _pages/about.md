@@ -22,8 +22,10 @@ Hello, my name is Haochang Luo, pronounced as "Haw-Chung Loh", written as "罗�
 The keywords to my research are precipitation, convection, fluid dynamics, thermodynamics, tropical waves, eddies and disturbances. 
 My research approaches include time series analysis such as linear regressions and composites, emperical orthogonal function (EOF, some people call it principal component analysis), maximum covariance analysis, power spetrum analysis etc. 
 
+As for personal life, video games are always on the top of my list. ARPG and ACT are my favoriate. OKay with traveling, not a fan of ball games (just don't like any types of competition). 
 
-# 📝 Publications 
+
+# 🥳 Publications 
 
 [Barotropic and Moisture-vortex growth of Monsoon Low Pressure Systems](https://doi.org/10.1175/JAS-D-22-0252.1)
 
@@ -37,12 +39,12 @@ My research approaches include time series analysis such as linear regressions a
 
 **Haochang Luo**, Ángel F. Adames, Richard B. Rood
 
-# Educations
+# 🤓 Educations
 - *2019.12 - 2024.01*, Ph.D. in Climate and Space Sciences and Engineering, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA. 
 - *2018.08 - 2019.12*, Master of Engineering in Applied Climate, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
 - *2014.09 - 2018.06*, Bachelor of Science in Atmospheric Sciences, College of Atmospheric Sciences, Nanjing University of Information Science & Technology (NUIST), Nanjing, Jiangsu, PRC
 
-# Presentations
+# 🤔 Presentations
 - *2023.12*, Poster presentation at AGU (American Geophysical Union, The Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates: Jet Streams, Storm Tracks, Stationary Waves, and Monsoons  session), San Francisco, CA, USA.
 - *2023.01*, Oral presentation at 103rd AMS (American Meteorological Society, 11th Symposium on the Madden-Julian Oscillation and Sub-Seasonal Monsoon Variability), Denver, CO, USA. 
 - *2022.12*, Poster presentation at AGU (Atmosphere, Ocean, and Land Processes in the Maritime Continent and Indo-Pacific session), Chicago, IL, USA.
