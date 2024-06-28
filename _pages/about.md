@@ -60,5 +60,5 @@ My research approaches include time series analysis such as linear regressions a
 - *2020.01*, Poster presentation at 100th AMS (33rd Conference on Climate Variability and Change), Boston, MA, USA.
 
 # Working experience
-- *2024.04 - *, Department of Earth and Atmospheric Sciences, The City University of New York, City College, New York, NY, USA
+- *2024.04 - now*, Department of Earth and Atmospheric Sciences, The City University of New York, City College, New York, NY, USA
 - *2019.05 - 2023.12*, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
