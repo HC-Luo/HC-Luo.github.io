@@ -20,7 +20,7 @@ redirect_from:
 Hello, my name is Haochang Luo, pronounced as "Haw-Chung Loh", written as "罗昊昌". I am a Postdoctoral researcher working in the City University of New York, City College. My work focus on the dynamics of large-scale convective systems and their interactions with the other systems. Most of my targets are in the tropics and subtrpics, for example, the Indian Summer Monsoon Low Pressure Systems (MLPSs) and African Easterly Waves (AEWs). Recently I have been eyeballing on the Intertropical Convergence Zone (ITCZ).
 
 
-The keywords to my research interest are precipitation, convection, fluid dynamics, thermodynamics, tropical waves, eddies and disturbances. 
+The keywords to my research are precipitation, convection, fluid dynamics, thermodynamics, tropical waves, eddies and disturbances. 
 My research approaches include time series analysis such as linear regressions and composites, emperical orthogonal function (EOF, some people call it principal component analysis), maximum covariance analysis, power spetrum analysis etc. 
 
 
