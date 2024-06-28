@@ -25,9 +25,6 @@ My research approaches include time series analysis such as linear regressions a
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
 [Barotropic and Moisture-vortex growth of Monsoon Low Pressure Systems](https://doi.org/10.1175/JAS-D-22-0252.1)
 
 **Haochang Luo**, Ángel F. Adames, Richard B. Rood
@@ -39,13 +36,6 @@ My research approaches include time series analysis such as linear regressions a
 [A Northern Hemispheric Wave Train Associated with Interannual Variations in the Bermuda High during Boreal Summer](https://doi.org/10.1175/JCLI-D-20-0608.1)
 
 **Haochang Luo**, Ángel F. Adames, Richard B. Rood
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
-
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # Educations
 - *2019.12 - 2024.01*, Ph.D. in Climate and Space Sciences and Engineering, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA. 
