@@ -23,18 +23,22 @@ The keywords to my research are precipitation, convection, fluid dynamics, therm
 My research approaches include time series analysis such as linear regressions and composites, emperical orthogonal function (EOF, some people call it principal component analysis), maximum covariance analysis, power spetrum analysis etc. 
 
 
-%# 🔥 News
-%- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-%- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-
 # 📝 Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[Barotropic and Moisture-vortex growth of Monsoon Low Pressure Systems](https://doi.org/10.1175/JAS-D-22-0252.1)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Haochang Luo**, Ángel F. Adames, Richard B. Rood
+
+[Moist Static Potential Vorticity Budget in Tropical Motion Systems](https://doi.org/10.1175/JAS-D-21-0161.1)
+
+ Ángel F. Adames, Rosa M. Vargas Martes, **Haochang Luo**, Richard B. Rood
+
+[A Northern Hemispheric Wave Train Associated with Interannual Variations in the Bermuda High during Boreal Summer](https://doi.org/10.1175/JCLI-D-20-0608.1)
+
+**Haochang Luo**, Ángel F. Adames, Richard B. Rood
 
 [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
@@ -43,17 +47,18 @@ My research approaches include time series analysis such as linear regressions a
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+# Educations
+- *2019.12 - 2024.01*, Ph.D. in Climate and Space Sciences and Engineering, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA. 
+- *2018.08 - 2019.12*, Master of Engineering in Applied Climate, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
+- *2014.09 - 2018.06*, Bachelor of Science in Atmospheric Sciences, College of Atmospheric Sciences, Nanjing University of Information Science & Technology (NUIST), Nanjing, Jiangsu, PRC
 
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+# Presentations
+- *2023.12*, Poster presentation at AGU (American Geophysical Union, The Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates: Jet Streams, Storm Tracks, Stationary Waves, and Monsoons  session), San Francisco, CA, USA.
+- *2023.01*, Oral presentation at 103rd AMS (American Meteorological Society, 11th Symposium on the Madden-Julian Oscillation and Sub-Seasonal Monsoon Variability), Denver, CO, USA. 
+- *2022.12*, Poster presentation at AGU (Atmosphere, Ocean, and Land Processes in the Maritime Continent and Indo-Pacific session), Chicago, IL, USA.
+- *2022.10*, Oral presentation at the \| [\[department seminar\]](https://youtu.be/iA7BUL5gc94) of the Atmospheric and Oceanic Sciences Department, University of Wisconsin, Madison, WI, USA.
+- *2020.01*, Poster presentation at 100th AMS (33rd Conference on Climate Variability and Change), Boston, MA, USA.
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
-
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+# Working experience
+- *2024.04 - *, Department of Earth and Atmospheric Sciences, The City University of New York, City College, New York, NY, USA
+- *2019.05 - 2023.12*, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
