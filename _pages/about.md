@@ -85,7 +85,9 @@ Supervisors: X. San Liang, Ying Wang
 
 ▸▶︎ Research on the tracking method of updrafts in Tropical Cyclones. *2016.06 - 2017.06*
 
-- Independently improved the SPOUT (Statistical and Programmable Objective Updraft Tracker) to adjust the simulation results of TCM4 (Tropical Cyclone Model version 4).
+Supervisor: Qingqing Li
+
+- Improved the SPOUT (Statistical and Programmable Objective Updraft Tracker) to adjust the simulation results of TCM4 (Tropical Cyclone Model version 4).
 
 - Studied the distribution, types, movement and lifespan of the updrafts in the spiral rain bands.
 
