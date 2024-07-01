@@ -22,7 +22,7 @@ Hello, my name is Haochang Luo, pronounced as "Haw-Chung Loh", written as "罗�
 The keywords to my research are precipitation, convection, fluid dynamics, thermodynamics, tropical waves, eddies and disturbances. 
 My research approaches include time series analysis such as linear regressions and composites, emperical orthogonal function (EOF, some people call it principal component analysis), maximum covariance analysis, power spetrum analysis etc. 
 
-As for personal life, video games are always on the top of my list. ARPG and ACT are my favoriate. OKay with traveling, not a fan of ball games (just don't like any types of competition). 
+As for personal life, video games are always on the top of my list. ARPG and ACT are my favoriate. 
 
 
 # 🥳 Publications 
@@ -53,11 +53,11 @@ As for personal life, video games are always on the top of my list. ARPG and ACT
   
 - *2022.12*, Poster presentation at AGU (Atmosphere, Ocean, and Land Processes in the Maritime Continent and Indo-Pacific session), Chicago, IL, USA.
   
-- *2022.10*, Oral presentation at the [\[department seminar\]](https://youtu.be/iA7BUL5gc94) of the Atmospheric and Oceanic Sciences Department, University of Wisconsin, Madison, WI, USA.
+- *2022.10*, Oral presentation at the [department seminar](https://youtu.be/iA7BUL5gc94) of the Atmospheric and Oceanic Sciences Department, University of Wisconsin, Madison, WI, USA.
   
 - *2020.01*, Poster presentation at 100th AMS (33rd Conference on Climate Variability and Change), Boston, MA, USA.
 
-# 🫡 Working experiences
+# 🫡 Employments
 - *2024.04 - now*, Department of Earth and Atmospheric Sciences, The City University of New York, City College, New York, NY, USA
   
 - *2019.05 - 2023.12*, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
