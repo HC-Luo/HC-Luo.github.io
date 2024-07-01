@@ -49,7 +49,7 @@ As for personal life, video games are always on the top of my list. ARPG and ACT
 
 # 🧑🏻‍🔬 Projects
 
-Research on the monsoon low pressure system growth and propagation. *2021.05 - 2023.12*
+▸▶︎ Research on the monsoon low pressure system growth and propagation. *2021.05 - 2023.12*
 
 Supervisors: Ángel F. Adames-Corraliza, Richard B. Rood
 
@@ -57,13 +57,13 @@ Supervisors: Ángel F. Adames-Corraliza, Richard B. Rood
 - Investigated the moist static energy and perturbation kinetic energy budgets.
 - Reviewed the conventional and newly-developed instabilities theories.
 
-Research on moist static potential vorticity and its applications to tropical systems. *2020.07*
+▸▶︎ Research on moist static potential vorticity and its applications to tropical systems. *2020.07*
 
 Supervisors: Ángel F. Adames-Corraliza, Richard B. Rood
 
 - Developed the moist static potential vorticity framework in the tropics.
 
-Research on a northern hemispheric wave train associated with fluctuations in Bermuda High during boreal summer. *2019.05 - 2021.05*
+▸▶︎ Research on a northern hemispheric wave train associated with fluctuations in Bermuda High during boreal summer. *2019.05 - 2021.05*
 
 Supervisors: Ángel F. Adames-Corraliza, Richard B. Rood
 
@@ -73,7 +73,7 @@ Supervisors: Ángel F. Adames-Corraliza, Richard B. Rood
 
 - Explained the summer precipitation variations over the southeastern US associated with the wave train and the Bermuda High.
 
-Research on simulating a cold air outbreak process with and without data assimilation. (Dissertation for B.S.) *2017.12 - 2018.05*
+▸▶︎ Research on simulating a cold air outbreak process with and without data assimilation. (Dissertation for B.S.) *2017.12 - 2018.05*
 
 Supervisors: X. San Liang, Ying Wang
 
@@ -83,7 +83,7 @@ Supervisors: X. San Liang, Ying Wang
 
 - Analyzed the characteristics of that process through temperature, snowfall and isentropic potential vorticity fields calculated by WRF.
 
-Research on the tracking method of updrafts in Tropical Cyclones. *2016.06 - 2017.06*
+▸▶︎ Research on the tracking method of updrafts in Tropical Cyclones. *2016.06 - 2017.06*
 
 - Independently improved the SPOUT (Statistical and Programmable Objective Updraft Tracker) to adjust the simulation results of TCM4 (Tropical Cyclone Model version 4).
 
