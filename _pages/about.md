@@ -25,6 +25,14 @@ My research approaches include time series analysis such as linear regressions a
 As for personal life, video games are always on the top of my list. ARPG and ACT are my favoriate. 
 
 
+# 🧑🏻‍🎓 Educations
+- *2019.12 - 2024.01*, Ph.D. in Climate and Space Sciences and Engineering, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA.
+  
+- *2018.08 - 2019.12*, Master of Engineering in Applied Climate, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
+  
+- *2014.09 - 2018.06*, Bachelor of Science in Atmospheric Sciences, College of Atmospheric Sciences, Nanjing University of Information Science & Technology (NUIST), Nanjing, Jiangsu, PRC
+
+
 # 🧑🏻‍🍼 Publications 
 
 [Barotropic and Moisture-vortex growth of Monsoon Low Pressure Systems](https://doi.org/10.1175/JAS-D-22-0252.1)
@@ -41,20 +49,45 @@ As for personal life, video games are always on the top of my list. ARPG and ACT
 
 # 🧑🏻‍🔬 Projects
 
-Research on the monsoon low pressure system growth and propagation.
+Research on the monsoon low pressure system growth and propagation. *2021.05 - 2023.12*
 
-Supervisors: Ángel F. Adames-Corraliza, Richard B. Rood *2021.05 - 2023.12*
+Supervisors: Ángel F. Adames-Corraliza, Richard B. Rood
 
 - Explained the mechanisms that lead to the growth and westward propagation of the Indian summer monsoon low pressure systems.
 - Investigated the moist static energy and perturbation kinetic energy budgets.
 - Reviewed the conventional and newly-developed instabilities theories.
 
-# 🧑🏻‍🎓 Educations
-- *2019.12 - 2024.01*, Ph.D. in Climate and Space Sciences and Engineering, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA.
-  
-- *2018.08 - 2019.12*, Master of Engineering in Applied Climate, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
-  
-- *2014.09 - 2018.06*, Bachelor of Science in Atmospheric Sciences, College of Atmospheric Sciences, Nanjing University of Information Science & Technology (NUIST), Nanjing, Jiangsu, PRC
+Research on moist static potential vorticity and its applications to tropical systems. *2020.07*
+
+Supervisors: Ángel F. Adames-Corraliza, Richard B. Rood
+
+- Developed the moist static potential vorticity framework in the tropics.
+
+Research on a northern hemispheric wave train associated with fluctuations in Bermuda High during boreal summer. *2019.05 - 2021.05*
+
+Supervisors: Ángel F. Adames-Corraliza, Richard B. Rood
+
+- Investigated the processes that lead to the spatial and temporal variation of the Bermuda High during July and August using linear regression analysis.
+
+- Discovered a Rossby wave train over North America and eastern-north Atlantic related to the Bermuda High.
+
+- Explained the summer precipitation variations over the southeastern US associated with the wave train and the Bermuda High.
+
+Research on simulating a cold air outbreak process with and without data assimilation. (Dissertation for B.S.) *2017.12 - 2018.05*
+
+Supervisors: X. San Liang, Ying Wang
+
+- Utilized WRF model to simulate a cold air outbreak process in east Asia, January 2016.
+
+- Implemented data assimilation using ground-based observation data and compared the difference between outputs with and without data assimilation.
+
+- Analyzed the characteristics of that process through temperature, snowfall and isentropic potential vorticity fields calculated by WRF.
+
+Research on the tracking method of updrafts in Tropical Cyclones. *2016.06 - 2017.06*
+
+- Independently improved the SPOUT (Statistical and Programmable Objective Updraft Tracker) to adjust the simulation results of TCM4 (Tropical Cyclone Model version 4).
+
+- Studied the distribution, types, movement and lifespan of the updrafts in the spiral rain bands.
 
 # 🧑🏻‍🏫 Presentations
 - *2023.12*, Poster presentation at AGU (American Geophysical Union, The Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates: Jet Streams, Storm Tracks, Stationary Waves, and Monsoons  session), San Francisco, CA, USA.
