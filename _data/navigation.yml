@@ -14,3 +14,6 @@ main:
 
   - title: "Employments"
     url: "/#-employments"
+
+  - title: "CV"
+    url: "/#-CV"
