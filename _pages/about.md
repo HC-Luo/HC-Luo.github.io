@@ -25,7 +25,7 @@ My research approaches include time series analysis such as linear regressions a
 As for personal life, video games are always on the top of my list. ARPG and ACT are my favoriate. 
 
 
-# 🥳 Publications 
+# 🧑🏻‍🍼 Publications 
 
 [Barotropic and Moisture-vortex growth of Monsoon Low Pressure Systems](https://doi.org/10.1175/JAS-D-22-0252.1)
 
@@ -39,14 +39,24 @@ As for personal life, video games are always on the top of my list. ARPG and ACT
 
 **Haochang Luo**, Ángel F. Adames, Richard B. Rood
 
-# 🤓 Educations
+# 🧑🏻‍🔬 Projects
+
+Research on the monsoon low pressure system growth and propagation.
+
+Supervisors: Ángel F. Adames-Corraliza, Richard B. Rood *2021.05 - 2023.12*
+
+- Explained the mechanisms that lead to the growth and westward propagation of the Indian summer monsoon low pressure systems.
+- Investigated the moist static energy and perturbation kinetic energy budgets.
+- Reviewed the conventional and newly-developed instabilities theories.
+
+# 🧑🏻‍🎓 Educations
 - *2019.12 - 2024.01*, Ph.D. in Climate and Space Sciences and Engineering, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA.
   
 - *2018.08 - 2019.12*, Master of Engineering in Applied Climate, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
   
 - *2014.09 - 2018.06*, Bachelor of Science in Atmospheric Sciences, College of Atmospheric Sciences, Nanjing University of Information Science & Technology (NUIST), Nanjing, Jiangsu, PRC
 
-# 🤔 Presentations
+# 🧑🏻‍🏫 Presentations
 - *2023.12*, Poster presentation at AGU (American Geophysical Union, The Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates: Jet Streams, Storm Tracks, Stationary Waves, and Monsoons  session), San Francisco, CA, USA.
   
 - *2023.01*, Oral presentation at 103rd AMS (American Meteorological Society, 11th Symposium on the Madden-Julian Oscillation and Sub-Seasonal Monsoon Variability), Denver, CO, USA.
@@ -57,7 +67,10 @@ As for personal life, video games are always on the top of my list. ARPG and ACT
   
 - *2020.01*, Poster presentation at 100th AMS (33rd Conference on Climate Variability and Change), Boston, MA, USA.
 
-# 🫡 Employments
+# 🧑🏻‍💻 Employments
 - *2024.04 - now*, Department of Earth and Atmospheric Sciences, The City University of New York, City College, New York, NY, USA
   
 - *2019.05 - 2023.12*, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
+
+# 🧑🏻‍💼 CV
+[Google drive](https://drive.google.com/file/d/1pDVBvKfrj_VJyeRa18rJzdPnACKISJlY/view?usp=share_link)
