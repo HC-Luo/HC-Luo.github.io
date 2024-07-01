@@ -17,7 +17,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-My name is Haochang Luo, pronounced as "Haw-Chung Loh", written as "罗昊昌". I come from [Nanjing](https://en.wikipedia.org/wiki/Nanjing), one of the metropolises in China. Bored with staying my home city for over 20 years, I decided to persue a graduate degree in the US. As my first stop of this journey, Ann Arbor is an ideal place for my academic goal, well, except for the coldness. Upon finishing my master's program, I realized that my eagerness to academia was far from satisfied. So I started my PhD in the same school, same department. One year later, my PI moved to Madison, and I followed. The rest few years of my PhD career was filled with formidable harships but unwavering support, devouring stress but glittering joyfulness, relentless rejections but continuous encouragments, and of course, the bitterness of the midwest and the beer at the lake shore during late summer.
+My name is Haochang Luo, pronounced as "Haw-Chung Loh", written as "罗昊昌". I come from [Nanjing](https://en.wikipedia.org/wiki/Nanjing), one of the metropolises in China. 
+
+Bored with staying my home city for over 20 years, I decided to persue a graduate degree in the US. 
+As my first stop of this journey, Ann Arbor is an ideal place for my academic goal, well, except for the coldness. Upon finishing my master's program, I realized that my eagerness to academia was far from satisfied. So I started my PhD in the same school, same department. 
+
+One year later, my PI moved to Madison, and I followed. The rest few years of my PhD career was filled with formidable harships but unwavering support, devouring stress but glittering joyfulness, relentless rejections but continuous encouragments, and of course, the bitterness of the midwest and the beer at the lake shore during late summer.
+
 At the end of a chapter yet start of another, I am now a working as a postdoctoral researcher working in the City University of New York, City College. 
 
 My work focus on the dynamics of large-scale convective systems and their interactions with the other systems. Most of my targets are in the tropics and subtrpics, for example, the Indian Summer Monsoon Low Pressure Systems (MLPSs) and African Easterly Waves (AEWs). Recently I have been eyeballing the Intertropical Convergence Zone (ITCZ).
