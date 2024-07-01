@@ -26,11 +26,11 @@ As for personal life, video games are always on the top of my list. ARPG and ACT
 
 
 # 🧑🏻‍🎓 Educations
-- *2019.12 - 2024.01*, Ph.D. in Climate and Space Sciences and Engineering, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA.
+- 🇺🇸 *2019.12 - 2024.01*, Ph.D. in Climate and Space Sciences and Engineering, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA.
   
-- *2018.08 - 2019.12*, Master of Engineering in Applied Climate, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
+- 🇺🇸 *2018.08 - 2019.12*, Master of Engineering in Applied Climate, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
   
-- *2014.09 - 2018.06*, Bachelor of Science in Atmospheric Sciences, College of Atmospheric Sciences, Nanjing University of Information Science & Technology (NUIST), Nanjing, Jiangsu, PRC
+- 🇨🇳 *2014.09 - 2018.06*, Bachelor of Science in Atmospheric Sciences, College of Atmospheric Sciences, Nanjing University of Information Science & Technology (NUIST), Nanjing, Jiangsu, PRC 
 
 
 # 🧑🏻‍🍼 Publications 
