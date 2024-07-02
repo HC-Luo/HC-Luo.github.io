@@ -24,7 +24,7 @@ As my first stop of this journey, Ann Arbor is an ideal place for my academic go
 
 One year later, as my PI moved to Madison, I followed. The rest few years of my PhD career was a voyage guided by continuous encouragments, unwavering support and glittering joyfulness through relentless rejections, formidable challenges and devouring stress. And of course, the bitterness of the midwest perishes in front of the midsummer sunset's beer at the lake shore. 🌅
 
-At the end of a chapter yet start of another, I am now a working as a postdoctoral researcher working in the City University of New York, City College. 🏙️
+At the end of a chapter yet start of another, I am now a working as a postdoctoral researcher in the City University of New York, City College. 🏙️
 
 My work focuses on the dynamics of large-scale convective systems and their interactions with the other systems. Most of my targets are in the tropics and subtrpics, for example, the Indian Summer Monsoon Low Pressure Systems (MLPSs) and African Easterly Waves (AEWs). Recently I have been eyeballing the Intertropical Convergence Zone (ITCZ).
 
