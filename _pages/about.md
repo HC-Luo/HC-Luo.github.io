@@ -19,12 +19,12 @@ redirect_from:
 
 My name is Haochang Luo, pronounced as "Haw-Chung Loh", written as "罗昊昌". I come from [Nanjing](https://en.wikipedia.org/wiki/Nanjing), one of the metropolises in China. 
 
-Bored with staying my home city for over 20 years, I decided to persue a graduate degree in the US. 
+Bored with staying my home city for over 20 years, I decided to persue a graduate degree in the US. ✈️
 As my first stop of this journey, Ann Arbor is an ideal place for my academic goal, well, except for the coldness. Upon finishing my master's program, I realized that my eagerness to academia was far from satisfied. So I started my PhD in the same school, same department. 
 
 One year later, as my PI moved to Madison, I followed. The rest few years of my PhD career was a voyage guided by continuous encouragments, unwavering support and glittering joyfulness through relentless rejections, formidable challenges and devouring stress. And of course, the bitterness of the midwest perishes in front of the midsummer sunset's beer at the lake shore. 🌅
 
-At the end of a chapter yet start of another, I am now a working as a postdoctoral researcher in the City University of New York, City College. 🏙️
+At the end of a chapter yet start of another, I am now a working as a postdoctoral researcher in the City University of New York, City College. 🗽
 
 My work focuses on the dynamics of large-scale convective systems and their interactions with the other systems. Most of my targets are in the tropics and subtrpics, for example, the Indian Summer Monsoon Low Pressure Systems (MLPSs) and African Easterly Waves (AEWs). Recently I have been eyeballing the Intertropical Convergence Zone (ITCZ).
 
