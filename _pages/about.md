@@ -30,7 +30,7 @@ My work focuses on the dynamics of large-scale convective systems and their inte
 
 My research interest covers a broad range of topics including precipitation, convection, fluid dynamics, thermodynamics, tropical waves, eddies and disturbances. 
 My research approaches are based on time series analysis such as linear regressions and composites, emperical orthogonal function (EOF, some people call it principal component analysis), maximum covariance analysis, power spetrum analysis etc. 
-With the experience of coding in a Linux environment for more that 7 years, I am proficient in Python, NCL and Matlab. LaTex is my primary writing tool.
+With the experience of coding in a Linux environment for more than 7 years, I am proficient in Python, NCL and Matlab. LaTex is my primary writing tool.
 
 As for personal life, video games are always on the top of my list. ARPG and ACT are my favoriate. 🎮
 
