@@ -22,7 +22,7 @@ My name is Haochang Luo, pronounced as "Haw-Chung Loh", written as "罗昊昌". 
 Bored with staying my home city for over 20 years, I decided to persue a graduate degree in the US. 
 As my first stop of this journey, Ann Arbor is an ideal place for my academic goal, well, except for the coldness. Upon finishing my master's program, I realized that my eagerness to academia was far from satisfied. So I started my PhD in the same school, same department. 
 
-One year later, my PI moved to Madison, and I followed. The rest few years of my PhD career was a voyage guided by continuous encouragments, unwavering support and glittering joyfulness through relentless rejections, formidable challenges and devouring stress. And of course, the bitterness of the midwest perishes in front of the midsummer night's beer at the lake shore.
+One year later, as my PI moved to Madison, I followed. The rest few years of my PhD career was a voyage guided by continuous encouragments, unwavering support and glittering joyfulness through relentless rejections, formidable challenges and devouring stress. And of course, the bitterness of the midwest perishes in front of the midsummer night's beer at the lake shore.
 
 At the end of a chapter yet start of another, I am now a working as a postdoctoral researcher working in the City University of New York, City College. 
 
