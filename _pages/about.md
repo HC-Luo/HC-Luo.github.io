@@ -26,7 +26,7 @@ One year later, as my PI moved to Madison, I followed. The rest few years of my 
 
 At the end of a chapter yet start of another, I am now a working as a postdoctoral researcher in the City University of New York, City College. 🗽
 
-My work focuses on the dynamics of large-scale convective systems and their interactions with the other systems. Most of my targets are in the tropics and subtrpics, for example, the Indian Summer Monsoon Low Pressure Systems (MLPSs) and African Easterly Waves (AEWs). Recently I have been eyeballing the Intertropical Convergence Zone (ITCZ).
+My work focuses on the dynamics of large-scale convective systems and their interactions with the other systems. Most of my targets are in the tropics and subtrpics, for example, the Indian Summer Monsoon Low Pressure Systems (MLPSs) and African Easterly Waves (AEWs). Recently I have been eyeballing the Intertropical Convergence Zone (ITCZ) and actively studying Machine Learning. 
 
 My research interest covers a broad range of topics including precipitation, convection, fluid dynamics, thermodynamics, tropical waves, eddies and disturbances. 
 My research approaches are based on time series analysis such as linear regressions and composites, emperical orthogonal function (EOF, some people call it principal component analysis), maximum covariance analysis, power spetrum analysis etc. 
