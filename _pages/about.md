@@ -118,4 +118,4 @@ Supervisor: Qingqing Li
 - *2019.05 - 2023.12*, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
 
 # 🧑🏻‍💼 CV
-[Google drive](https://drive.google.com/file/d/1pDVBvKfrj_VJyeRa18rJzdPnACKISJlY/view?usp=share_link)
+[Google drive](https://drive.google.com/file/d/1niPYgni-kMytOzSx3li639HfT-AZCNYa/view?usp=sharing)
