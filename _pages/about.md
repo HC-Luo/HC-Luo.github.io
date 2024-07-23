@@ -17,8 +17,8 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-My name is Haochang Luo, pronounced as "Haw-Chung Loh", written as "罗昊昌". I come from [Nanjing](https://en.wikipedia.org/wiki/Nanjing), one of the metropolises in China. 
-Bored with staying my home city for over 20 years, I decided to persue a graduate degree in the US. ✈️
+My name is Haochang Luo, pronounced as "Haw-Chung Loh", written as "罗昊昌"(surname and given name reversed). I come from [Nanjing](https://en.wikipedia.org/wiki/Nanjing), a metropolis in China. 
+Bored with staying in my home city for over 20 years, I decided to persue a graduate degree in the US. ✈️
 
 As my first stop of this journey, Ann Arbor is an ideal place for my academic goal, well, except for the coldness. Upon finishing my master's program, I realized that my eagerness to academia was far from satisfied. So I started my PhD in the same school, same department. 
 
