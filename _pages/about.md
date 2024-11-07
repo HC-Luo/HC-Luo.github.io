@@ -17,22 +17,15 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-My name is Haochang Luo, pronounced as "Haw-Chung Loh", written as "罗昊昌"(surname and given name reversed). I come from [Nanjing](https://en.wikipedia.org/wiki/Nanjing), a metropolis in China. 
-Bored with staying in my home city for over 20 years, I decided to persue a graduate degree in the US. ✈️
+My name is Haochang Luo, pronounced as "Haw-Chung Loh", written as "罗昊昌"(surname and given name reversed). 
 
-As my first stop of this journey, Ann Arbor is an ideal place for my academic goal, well, except for the coldness. Upon finishing my master's program, I realized that my eagerness to academia was far from satisfied. So I started my PhD in the same school, same department. 
+I am now working as a postdoctoral researcher at the City University of New York, City College. 🗽
 
-One year later, as my PI moved to Madison, I followed. The rest few years of my PhD career was a voyage guided by continuous encouragments, unwavering support and glittering joyfulness through relentless rejections, formidable challenges and devouring stress. And of course, the bitterness of the midwest perishes in front of the midsummer sunset's beer at the lake shore. 🌅
-
-At the end of a chapter yet start of another, I am now a working as a postdoctoral researcher in the City University of New York, City College. 🗽
-
-My work focuses on the dynamics of large-scale convective systems and their interactions with the other systems. Most of my targets are in the tropics and subtrpics, for example, the Indian Summer Monsoon Low Pressure Systems (MLPSs) and African Easterly Waves (AEWs). Recently I have been eyeballing the Intertropical Convergence Zone (ITCZ) and actively studying Machine Learning. 
+My work focuses on the dynamics of large-scale convective systems and their interactions with other systems. Most of my targets are in the tropics and subtropics, for example, the Indian Summer Monsoon Low Pressure Systems (MLPSs) and African Easterly Waves (AEWs). Recently I have been eyeballing the Intertropical Convergence Zone (ITCZ) and actively studying Machine Learning. 
 
 My research interest covers a broad range of topics including precipitation, convection, fluid dynamics, thermodynamics, tropical waves, eddies and disturbances. 
-My research approaches are based on time series analysis such as linear regressions and composites, emperical orthogonal function (EOF, some people call it principal component analysis), maximum covariance analysis, power spetrum analysis etc. 
-With the experience of coding in a Linux environment for more than 7 years, I am proficient in Python, NCL and Matlab. LaTex is my primary writing tool.
-
-As for personal life, video games are always on the top of my list. ARPG and ACT are my favoriate. 🎮
+My research approaches are based on time series analysis such as linear regressions and composites, empirical orthogonal function (EOF, some people call it principal component analysis), maximum covariance analysis, power spectrum analysis, etc. 
+With experience of coding in a Linux environment for more than 7 years, I am proficient in Python, NCL and Matlab. LaTex is my primary writing tool.
 
 
 # 🧑🏻‍🎓 Educations
