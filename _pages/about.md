@@ -95,7 +95,11 @@ Supervisor: Qingqing Li
 - Studied the distribution, types, movement and lifespan of the updrafts in the spiral rain bands.
 
 # 🧑🏻‍🏫 Presentations
-- *2023.12*, Poster presentation at AGU (American Geophysical Union, The Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates: Jet Streams, Storm Tracks, Stationary Waves, and Monsoons  session), San Francisco, CA, USA.
+- *2024.12*, Poster presentation at AGU (American Geophysical Union, Advances in Theoretical Understanding of Atmospheric Convection Across Scales session), Washington D.C., USA.
+
+- *2024.11*, Oral presentation at the departmental seminar of the Earth and Atmospheric Sciences, City College of New York, New York, NY, USA.
+    
+- *2023.12*, Poster presentation at AGU (American Geophysical Union, The Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates: Jet Streams, Storm Tracks, Stationary Waves, and Monsoons session), San Francisco, CA, USA.
   
 - *2023.01*, Oral presentation at 103rd AMS (American Meteorological Society, 11th Symposium on the Madden-Julian Oscillation and Sub-Seasonal Monsoon Variability), Denver, CO, USA.
   
@@ -111,4 +115,4 @@ Supervisor: Qingqing Li
 - *2019.05 - 2023.12*, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
 
 # 🧑🏻‍💼 CV
-[Google drive](https://drive.google.com/file/d/1niPYgni-kMytOzSx3li639HfT-AZCNYa/view?usp=sharing)
+[Google drive](https://drive.google.com/file/d/15yohnecGqqcGlfW63Ok5624Cs_V4cSog/view?usp=sharing)
