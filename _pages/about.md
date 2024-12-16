@@ -8,6 +8,17 @@ redirect_from:
   - /about.html
 ---
 
+<style>
+  .large-image {
+    width: 500%;   /* This will make the image 5 times larger */
+    height: auto;  /* Maintain aspect ratio */
+    object-fit: contain;  /* Ensure image fits the container without distortion */
+  }
+  .paper-box {
+    margin-bottom: 20px;  /* Adds some space between boxes */
+  }
+</style>
+
 {% if site.google_scholar_stats_use_cdn %}
 {% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
 {% else %}
@@ -98,8 +109,17 @@ Supervisor: Qingqing Li
 
 - *2024.12*, Poster presentation at AGU (American Geophysical Union, Advances in Theoretical Understanding of Atmospheric Convection Across Scales session), Washington D.C., USA.
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AGU 2024</div><img src='images/AGU2024poster.png' alt="sym" width="500%" height="auto"></div></div>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">AGU 2024</div>
+      <img src='images/AGU2024poster.png' alt="sym" class="large-image">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+    <!-- Text content here -->
+  </div>
+</div>
   
 </div>
 </div>
