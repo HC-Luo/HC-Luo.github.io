@@ -109,6 +109,10 @@ Supervisor: Qingqing Li
   
 - *2020.01*, Poster presentation at 100th AMS (33rd Conference on Climate Variability and Change), Boston, MA, USA.
 
+# Posters
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/AGU2024poster.jpeg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
 # 🧑🏻‍💻 Employments
 - *2024.04 - now*, Department of Earth and Atmospheric Sciences, The City University of New York, City College, New York, NY, USA
   
