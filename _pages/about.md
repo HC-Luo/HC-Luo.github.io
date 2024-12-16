@@ -96,44 +96,42 @@ Supervisor: Qingqing Li
 
 # 🧑🏻‍🏫 Presentations
 
+- *2024.12*, Poster presentation at AGU (American Geophysical Union, Advances in Theoretical Understanding of Atmospheric Convection Across Scales session), Washington D.C., USA.
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AGU 2024</div><img src='images/AGU2024poster.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-- *2024.12*, Poster presentation at AGU (American Geophysical Union, Advances in Theoretical Understanding of Atmospheric Convection Across Scales session), Washington D.C., USA.
-
 </div>
 </div>
 
 - *2024.11*, Oral presentation at the departmental seminar of the Earth and Atmospheric Sciences, City College of New York, New York, NY, USA.
-
+  
+- *2023.12*, Poster presentation at AGU (American Geophysical Union, The Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates: Jet Streams, Storm Tracks, Stationary Waves, and Monsoons session), San Francisco, CA, USA.
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AGU 2023</div><img src='images/AGU2023poster.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-- *2023.12*, Poster presentation at AGU (American Geophysical Union, The Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates: Jet Streams, Storm Tracks, Stationary Waves, and Monsoons session), San Francisco, CA, USA.
-
 </div>
 </div>
 
 - *2023.01*, Oral presentation at 103rd AMS (American Meteorological Society, 11th Symposium on the Madden-Julian Oscillation and Sub-Seasonal Monsoon Variability), Denver, CO, USA.
-
+  
+- *2022.12*, Poster presentation at AGU (Atmosphere, Ocean, and Land Processes in the Maritime Continent and Indo-Pacific session), Chicago, IL, USA.
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AGU 2022</div><img src='images/AGU2022poster.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-- *2022.12*, Poster presentation at AGU (Atmosphere, Ocean, and Land Processes in the Maritime Continent and Indo-Pacific session), Chicago, IL, USA.
-
 </div>
 </div>
 
 - *2022.10*, Oral presentation at the [department seminar](https://youtu.be/iA7BUL5gc94) of the Atmospheric and Oceanic Sciences Department, University of Wisconsin, Madison, WI, USA.
+  
+- *2020.01*, Poster presentation at 100th AMS (33rd Conference on Climate Variability and Change), Boston, MA, USA.
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AMS 2020</div><img src='images/AMS2020poster.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
   
-- *2020.01*, Poster presentation at 100th AMS (33rd Conference on Climate Variability and Change), Boston, MA, USA.
-
 </div>
 </div>
 
