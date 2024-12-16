@@ -109,10 +109,6 @@ Supervisor: Qingqing Li
   
 - *2020.01*, Poster presentation at 100th AMS (33rd Conference on Climate Variability and Change), Boston, MA, USA.
 
-# Posters
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AGU 2024</div><img src='images/AGU2024poster.jpeg' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
 # 🧑🏻‍💻 Employments
 - *2024.04 - now*, Department of Earth and Atmospheric Sciences, The City University of New York, City College, New York, NY, USA
   
@@ -120,3 +116,17 @@ Supervisor: Qingqing Li
 
 # 🧑🏻‍💼 CV
 [Google drive](https://drive.google.com/file/d/15yohnecGqqcGlfW63Ok5624Cs_V4cSog/view?usp=sharing)
+
+# Posters
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AGU 2024</div><img src='images/AGU2024poster.jpeg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AGU 2023</div><img src='images/AGU2023poster2.pdf' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AGU 2022</div><img src='images/AGU2022poster.pdf' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AMS 2020</div><img src='images/AMS2020poster.pdf' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
