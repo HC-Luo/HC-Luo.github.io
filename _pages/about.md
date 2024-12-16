@@ -117,7 +117,7 @@ Supervisor: Qingqing Li
 # 🧑🏻‍💼 CV
 [Google drive](https://drive.google.com/file/d/15yohnecGqqcGlfW63Ok5624Cs_V4cSog/view?usp=sharing)
 
-# Posters
+# 🕺 Posters
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AGU 2024</div><img src='images/AGU2024poster.jpeg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
