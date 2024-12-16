@@ -106,7 +106,7 @@ Supervisor: Qingqing Li
 
 - *2024.11*, Oral presentation at the departmental seminar of the Earth and Atmospheric Sciences, City College of New York, New York, NY, USA.
   
-- *2023.12*, Poster presentation at AGU (American Geophysical Union, The Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates: Jet Streams, Storm Tracks, Stationary Waves, and Monsoons session), San Francisco, CA, USA.
+- *2023.12*, Poster presentation at AGU (The Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates: Jet Streams, Storm Tracks, Stationary Waves, and Monsoons session), San Francisco, CA, USA.
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AGU 2023</div><img src='images/AGU2023poster.png' alt="sym" width="200%"></div></div>
 <div class='paper-box-text' markdown="1">
