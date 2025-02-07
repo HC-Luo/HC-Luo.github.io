@@ -38,6 +38,14 @@ With experience of coding in a Linux environment for more than 7 years, I am pro
 
 # 🧑🏻‍🍼 Publications 
 
+[Thermodynamic Processes Governing the Evolution of Developing and Strong Non-developing African Easterly Waves (under review)]
+
+Víctor C. Mayta, Ángel F. Adames Corraliza, Kayleen Torres Maldonado, **Haochang Luo**, Kelly M. Núñez Ocasio
+
+[Observed Convective and Moist Dynamics in Extratropical and Tropical Synoptic-scale Circulation during Boreal Summer](https://dx.doi.org/10.7302/22830)
+
+**Haochang Luo**
+
 [Barotropic and Moisture-vortex growth of Monsoon Low Pressure Systems](https://doi.org/10.1175/JAS-D-22-0252.1)
 
 **Haochang Luo**, Ángel F. Adames, Richard B. Rood
