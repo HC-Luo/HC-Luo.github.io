@@ -42,7 +42,7 @@ Thermodynamic Processes Governing the Evolution of Developing and Strong Non-dev
 
 Víctor C. Mayta, Ángel F. Adames Corraliza, Kayleen Torres Maldonado, **Haochang Luo**, Kelly M. Núñez Ocasio
 
-[Observed Convective and Moist Dynamics in Extratropical and Tropical Synoptic-scale Circulation during Boreal Summer](https://dx.doi.org/10.7302/22830)
+[Observed Convective and Moist Dynamics in Extratropical and Tropical Synoptic-scale Circulation during Boreal Summer (PhD dissertation)](https://dx.doi.org/10.7302/22830)
 
 **Haochang Luo**
 
