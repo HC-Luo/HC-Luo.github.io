@@ -38,7 +38,7 @@ With experience of coding in a Linux environment for more than 7 years, I am pro
 
 # 🧑🏻‍🍼 Publications 
 
-[Thermodynamic Processes Governing the Evolution of Developing and Strong Non-developing African Easterly Waves (under review)]
+Thermodynamic Processes Governing the Evolution of Developing and Strong Non-developing African Easterly Waves (under review)
 
 Víctor C. Mayta, Ángel F. Adames Corraliza, Kayleen Torres Maldonado, **Haochang Luo**, Kelly M. Núñez Ocasio
 
