@@ -38,7 +38,7 @@ With experience of coding in a Linux environment for more than 7 years, I am pro
 
 # 🧑🏻‍🍼 Publications 
 
-Thermodynamic Processes Governing the Evolution of Developing and Strong Non-developing African Easterly Waves (under review)
+Thermodynamic Processes Governing the Evolution of Developing and Strong Non-developing African Easterly Waves (accepted)
 
 Víctor C. Mayta, Ángel F. Adames Corraliza, Kayleen Torres Maldonado, **Haochang Luo**, Kelly M. Núñez Ocasio
 
@@ -59,6 +59,14 @@ Víctor C. Mayta, Ángel F. Adames Corraliza, Kayleen Torres Maldonado, **Haocha
 **Haochang Luo**, Ángel F. Adames, Richard B. Rood
 
 # 🧑🏻‍🔬 Projects
+
+▸▶︎ Research on the transient eddy energy flux and interactions with Intertropical Convergence Zone. *2024.04 - now
+
+Supervisor: Spencer A. Hill
+
+- Adjusted the moist static energy budget in reanalysis data.
+- Conducted power spectrum analysis on transient eddies. Calculated eddy diffusion.
+- Correlated eddy activity onto the ITCZ dynamics.
 
 ▸▶︎ Research on the monsoon low pressure system growth and propagation. *2021.05 - 2023.12*
 
@@ -144,6 +152,8 @@ Supervisor: Qingqing Li
 
 # 🧑🏻‍💻 Employments
 - *2024.04 - now*, Department of Earth and Atmospheric Sciences, The City University of New York, City College, New York, NY, USA
+
+- *2020.10 - 2023.10*, Department of Atmospheric and Oceanic Sciences, University of Wisconsin, Madison, WI, USA
   
 - *2019.05 - 2023.12*, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA
 
