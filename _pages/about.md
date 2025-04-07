@@ -62,7 +62,7 @@ Víctor C. Mayta, Ángel F. Adames Corraliza, Kayleen Torres Maldonado, **Haocha
 
 ▸▶︎ Research on the transient eddy energy flux and interactions with Intertropical Convergence Zone. *2024.04 - now
 
-Supervisor: Spencer A. Hill
+Supervisor: Spencer A. Hill, Michela Biasutti
 
 - Adjusted the moist static energy budget in reanalysis data.
 - Conducted power spectrum analysis on transient eddies. Calculated eddy diffusion.
