@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-My name is Haochang Luo, pronounced as "Haw-Chung Loh", written as "罗昊昌"(surname and given name reversed). 
+My name is Haochang Luo, pronounced as "Haw-Chung Loh", written as "罗昊昌"(surname and given name reversed). Like my name, I study the sky.
 
-I am now working as a postdoctoral researcher at the City University of New York, City College. 🗽
+I am working as a postdoctoral researcher at the City University of New York, City College. 🗽
 
 My work focuses on the dynamics of large-scale convective systems and their interactions with other systems. Most of my targets are in the tropics and subtropics, for example, the Indian Summer Monsoon Low Pressure Systems (MLPSs) and African Easterly Waves (AEWs). Recently I have been eyeballing the Intertropical Convergence Zone (ITCZ) and actively studying Machine Learning. 
 
