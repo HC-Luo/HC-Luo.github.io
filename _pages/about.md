@@ -28,6 +28,11 @@ My research approaches are based on time series analysis such as linear regressi
 With experience of coding in a Linux environment for more than 7 years, I am proficient in Python, NCL and Matlab. Python packages that I use every day for my projects include numpy, xarray, matplotlib, cartopy, pandas, pytorch and some self-developed algorithms.  
 Overleaf is my primary writing tool.
 
+# Rescent Activities
+- 2025.05, Joining Hackathon at GFDL.
+- 2025.04, Paper on developers and nondevelopers got published.
+- 2025.03, Started a new project about machine learning.
+- 2025.02, Finished my trip to Japan and China.
 
 # 🧑🏻‍🎓 Educations
 - 🇺🇸 *2019.12 - 2024.01*, Ph.D. in Climate Sciences and Engineering, Department of Climate and Space Sciences and Engineering (CLASP), University of Michigan, Ann Arbor, MI, USA.
