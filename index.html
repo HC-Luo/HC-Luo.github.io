@@ -405,7 +405,7 @@ footer { border-top: 1px solid var(--bd); padding: 1.4rem 4rem 1.4rem 3rem; disp
 
     <div class="sb-section">Contact</div>
     <ul class="sb-links">
-      <li><a href="mailto:hluo@ccny.cuny.edu"><span class="sb-ico">✉</span>hluo@ccny.cuny.edu</a></li>
+      <li><span class="sb-ico">✉</span><span id="email-link"></span></li>
       <li><a href="https://scholar.google.com/citations?user=ktVljAsAAAAJ" target="_blank"><span class="sb-ico">◎</span>Google Scholar</a></li>
       <li><a href="https://www.researchgate.net/profile/Haochang-Luo" target="_blank"><span class="sb-ico">◈</span>ResearchGate</a></li>
       <li><a href="https://www.linkedin.com/in/haochang-luo" target="_blank"><span class="sb-ico">▣</span>LinkedIn</a></li>
@@ -677,10 +677,12 @@ footer { border-top: 1px solid var(--bd); padding: 1.4rem 4rem 1.4rem 3rem; disp
 
 <footer>
   <span>© 2024 Haochang Luo</span>
-  <span><a href="mailto:hluo@ccny.cuny.edu">hluo@ccny.cuny.edu</a></span>
+  <span id="email-link-footer"></span>
 </footer>
 
 <script>
+document.getElementById('email-link').innerHTML = '<a href="mailto:hluo@ccny.cuny.edu">hluo@ccny.cuny.edu</a>';
+document.getElementById('email-link-footer').innerHTML = '<a href="mailto:hluo@ccny.cuny.edu">hluo@ccny.cuny.edu</a>';
 function show(name) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
