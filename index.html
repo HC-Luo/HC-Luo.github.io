@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Haochang Luo — Postdoctoral research scientist, atmospheric dynamics, CUNY City College">
+<title>Haochang Luo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+/* ═══════════════════════════════════════════════
+   DESIGN TOKENS
+═══════════════════════════════════════════════ */
+:root {
+  --bg:           #faf8f4;
+  --bg-s:         #f3ede3;
+  --bg-card:      #ffffff;
+  --bd:           #e8ddd0;
+  --bd-dark:      #d0c4b4;
+  --tx:           #2a1810;
+  --tx-m:         #5c3d2e;
+  --tx-mu:        #9e7e6e;
+  --tx-fa:        #d4c4b8;
+  --acc:          #8b2635;
+  --acc-hover:    #6e1e2a;
+  --acc-light:    #fdf0f2;
+  --acc-mid:      #e8b4bc;
+  --nav-bg:       #2a1810;
+  --nav-tx:       rgba(255,248,244,0.7);
+  --nav-act-bg:   rgba(255,248,244,0.15);
+  --nav-act-tx:   #fff8f4;
+  --shadow-sm:    0 1px 3px rgba(42,24,16,0.06), 0 2px 8px rgba(42,24,16,0.04);
+  --shadow:       0 2px 8px rgba(42,24,16,0.08), 0 8px 24px rgba(42,24,16,0.06);
+  --shadow-lg:    0 4px 16px rgba(42,24,16,0.1), 0 16px 48px rgba(42,24,16,0.08);
+  --serif: 'Crimson Pro', Georgia, serif;
+  --sans:  'Outfit', system-ui, sans-serif;
+  --mono:  'IBM Plex Mono', monospace;
+  --nav-h:   62px;
+  --side-w:  268px;
+  --trans:   0.22s ease;
+}
+
+[data-theme="dark"] {
+  --bg:           #1a100a;
+  --bg-s:         #241610;
+  --bg-card:      #201208;
+  --bd:           #3a2418;
+  --bd-dark:      #4e3428;
+  --tx:           #f5ede6;
+  --tx-m:         #c4a898;
+  --tx-mu:        #7a6058;
+  --tx-fa:        #3a2820;
+  --acc:          #c4566a;
+  --acc-hover:    #d96a7e;
+  --acc-light:    #2a1418;
+  --acc-mid:      #6a2030;
+  --nav-bg:       #120a06;
+  --nav-tx:       rgba(245,237,230,0.6);
+  --nav-act-bg:   rgba(245,237,230,0.12);
+  --nav-act-tx:   #f5ede6;
+  --shadow-sm:    0 1px 3px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2);
+  --shadow:       0 2px 8px rgba(0,0,0,0.35), 0 8px 24px rgba(0,0,0,0.25);
+  --shadow-lg:    0 4px 16px rgba(0,0,0,0.4), 0 16px 48px rgba(0,0,0,0.3);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 15px; scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--tx);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  transition: background var(--trans), color var(--trans);
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+button { font-family: var(--sans); cursor: pointer; border: none; background: none; }
+strong { font-weight: 600; }
+
+/* ── NAV ── */
+.nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: var(--nav-h);
+  background: var(--nav-bg);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  padding: 0 1.75rem;
+  gap: 0.25rem;
+  transition: background var(--trans);
+}
+[data-theme="dark"] .nav { border-bottom: 1px solid var(--bd); }
+
+.nav-brand {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff8f4;
+  letter-spacing: 0.01em;
+  margin-right: auto;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.nav-brand span { font-weight: 300; font-style: italic; font-size: 0.85em; opacity: 0.7; margin-left: 0.4rem; }
+
+.nav-links { list-style: none; display: flex; align-items: center; gap: 0.15rem; }
+.nav-links a {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--nav-tx);
+  padding: 0.38rem 0.8rem;
+  border-radius: 5px;
+  transition: background var(--trans), color var(--trans);
+  white-space: nowrap;
+}
+.nav-links a:hover { background: var(--nav-act-bg); color: var(--nav-act-tx); }
+.nav-links a.active { background: var(--acc); color: #fff8f4; }
+
+.nav-controls { display: flex; align-items: center; gap: 0.5rem; margin-left: 0.75rem; }
+.theme-btn {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: rgba(255,248,244,0.1);
+  color: rgba(255,248,244,0.75);
+  font-size: 0.9rem;
+  display: flex; align-items: center; justify-content: center;
+  transition: background var(--trans), color var(--trans);
+  flex-shrink: 0;
+}
+.theme-btn:hover { background: rgba(255,248,244,0.18); color: #fff8f4; }
+
+.burger {
+  display: none;
+  width: 34px; height: 34px;
+  background: rgba(255,248,244,0.1);
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5px;
+  flex-shrink: 0;
+}
+.burger span { display: block; width: 18px; height: 1.5px; background: rgba(255,248,244,0.75); border-radius: 1px; transition: all 0.2s; }
+
+@media (max-width: 840px) {
+  .burger { display: flex; }
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: var(--nav-h); left: 0; right: 0;
+    background: var(--nav-bg);
+    border-bottom: 1px solid var(--bd-dark);
+    padding: 0.75rem 1.5rem 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+    z-index: 299;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { font-size: 0.9rem; width: 100%; padding: 0.55rem 0.8rem; }
+}
+
+/* ── LAYOUT ── */
+.layout {
+  display: grid;
+  grid-template-columns: var(--side-w) 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: var(--nav-h);
+  min-height: 100vh;
+}
+@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+/* ── SIDEBAR ── */
+.sidebar {
+  position: sticky;
+  top: var(--nav-h);
+  height: calc(100vh - var(--nav-h));
+  overflow-y: auto;
+  background: var(--bg-card);
+  border-right: 1px solid var(--bd);
+  padding: 2.5rem 1.6rem 2rem;
+  transition: background var(--trans), border-color var(--trans);
+}
+.sidebar::-webkit-scrollbar { width: 3px; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--bd); border-radius: 2px; }
+
+.sb-photo-wrap { position: relative; width: 100px; height: 100px; margin-bottom: 1.1rem; }
+.sb-photo { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 2.5px solid var(--bd-dark); transition: border-color var(--trans); }
+.sb-photo-ring { position: absolute; inset: -4px; border-radius: 50%; border: 1.5px dashed var(--acc-mid); opacity: 0.5; animation: spin 18s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.sb-name { font-family: var(--serif); font-size: 1.28rem; font-weight: 700; color: var(--tx); line-height: 1.2; margin-bottom: 0.2rem; }
+.sb-name-sub { font-family: var(--mono); font-size: 0.72rem; color: var(--tx-mu); margin-bottom: 0.3rem; letter-spacing: 0.04em; }
+.sb-role { font-size: 0.8rem; color: var(--tx-m); line-height: 1.55; margin-bottom: 1.4rem; padding-bottom: 1.4rem; border-bottom: 1px solid var(--bd); }
+
+.sb-section { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--tx-fa); margin: 1.25rem 0 0.5rem; }
+
+.sb-links { list-style: none; display: flex; flex-direction: column; gap: 0.05rem; }
+.sb-links a { display: flex; align-items: center; gap: 0.6rem; font-size: 0.8rem; color: var(--tx-m); padding: 0.38rem 0.5rem; border-radius: 5px; transition: background var(--trans), color var(--trans); }
+.sb-links a:hover { background: var(--bg-s); color: var(--tx); }
+.sb-links a:hover .sb-ico { color: var(--acc); }
+.sb-ico { font-size: 0.85rem; width: 18px; text-align: center; flex-shrink: 0; color: var(--tx-mu); transition: color var(--trans); }
+
+.sb-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.sb-tag { font-family: var(--mono); font-size: 0.65rem; background: var(--bg-s); color: var(--tx-m); border: 1px solid var(--bd); padding: 2px 7px; border-radius: 3px; transition: background var(--trans), border-color var(--trans); }
+
+/* ── MAIN ── */
+main { padding: 3rem 4rem 6rem 3rem; min-width: 0; }
+@media (max-width: 900px) { main { padding: 2.25rem 1.75rem 5rem; } }
+@media (max-width: 480px) { main { padding: 1.5rem 1.1rem 4rem; } }
+
+.section { display: none; }
+.section.active { display: block; animation: fadein 0.3s ease both; }
+@keyframes fadein { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.sec-hd { display: flex; align-items: flex-end; gap: 1rem; margin-bottom: 2.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--bd); }
+.sec-icon { font-size: 2.2rem; line-height: 1; flex-shrink: 0; }
+.sec-title { font-family: var(--serif); font-size: 2.1rem; font-weight: 700; color: var(--tx); line-height: 1.1; }
+.sec-sub { font-size: 0.82rem; color: var(--tx-mu); font-style: italic; margin-top: 0.15rem; }
+
+.divline { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--tx-mu); margin: 2.5rem 0 1.1rem; display: flex; align-items: center; gap: 0.75rem; }
+.divline::after { content:''; flex:1; height:1px; background: var(--bd); }
+
+/* ── ABOUT ── */
+.about-lede { font-family: var(--serif); font-style: italic; font-size: 1.22rem; line-height: 1.72; color: var(--tx-m); border-left: 3px solid var(--acc); padding: 0.25rem 0 0.25rem 1.1rem; margin-bottom: 1.75rem; }
+.about-text { font-size: 0.93rem; color: var(--tx-m); line-height: 1.88; margin-bottom: 2rem; }
+.about-text p { margin-bottom: 0.9rem; }
+.about-text p:last-child { margin-bottom: 0; }
+
+.meta-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.65rem; margin-bottom: 2rem; }
+@media (max-width: 520px) { .meta-grid { grid-template-columns: 1fr; } }
+.meta-cell { background: var(--bg-s); border: 1px solid var(--bd); border-radius: 7px; padding: 0.7rem 1rem; transition: background var(--trans), border-color var(--trans); }
+.meta-cell-lbl { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tx-mu); margin-bottom: 0.15rem; }
+.meta-cell-val { font-size: 0.87rem; font-weight: 500; color: var(--tx); }
+
+.news-box { border: 1px solid var(--bd); border-radius: 9px; overflow: hidden; margin-bottom: 2.5rem; box-shadow: var(--shadow-sm); transition: border-color var(--trans), box-shadow var(--trans); }
+.news-box-hd { background: var(--acc); padding: 0.6rem 1.1rem; font-size: 0.64rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,248,244,0.9); }
+.news-row { display: flex; gap: 1rem; padding: 0.65rem 1.1rem; border-bottom: 1px solid var(--bd); align-items: baseline; transition: background var(--trans); }
+.news-row:last-child { border-bottom: none; }
+.news-row:hover { background: var(--bg-s); }
+.news-date { font-family: var(--mono); font-size: 0.72rem; color: var(--tx-mu); white-space: nowrap; flex-shrink: 0; min-width: 52px; }
+.news-text { font-size: 0.87rem; color: var(--tx-m); line-height: 1.55; }
+
+.edu-list { display: flex; flex-direction: column; }
+.edu-row { display: grid; grid-template-columns: 72px 1fr; gap: 1.25rem; padding: 1.1rem 0; border-bottom: 1px solid var(--bd); align-items: start; }
+.edu-row:last-child { border-bottom: none; }
+.edu-yr { font-family: var(--mono); font-size: 0.7rem; color: var(--tx-mu); line-height: 1.4; padding-top: 0.2rem; }
+.edu-flag { font-size: 1.1rem; margin-bottom: 0.2rem; }
+.edu-deg { font-size: 0.93rem; font-weight: 600; color: var(--tx); margin-bottom: 0.1rem; }
+.edu-place { font-size: 0.82rem; color: var(--tx-m); line-height: 1.5; }
+
+.cv-btn { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 2rem; padding: 0.62rem 1.3rem; background: var(--acc); color: #fff8f4; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; border-radius: 6px; transition: background var(--trans), box-shadow var(--trans); box-shadow: 0 2px 8px rgba(139,38,53,0.25); }
+.cv-btn:hover { background: var(--acc-hover); box-shadow: 0 4px 16px rgba(139,38,53,0.35); }
+
+/* ── PUBLICATIONS ── */
+.pub-list { border: 1px solid var(--bd); border-radius: 9px; overflow: hidden; box-shadow: var(--shadow-sm); }
+.pub-card { background: var(--bg-card); padding: 1.3rem 1.6rem; border-bottom: 1px solid var(--bd); position: relative; transition: background var(--trans); }
+.pub-card:last-child { border-bottom: none; }
+.pub-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--acc); opacity: 0; transition: opacity var(--trans); }
+.pub-card:hover { background: var(--bg-s); }
+.pub-card:hover::before { opacity: 1; }
+.pub-venue { font-family: var(--mono); font-size: 0.68rem; color: var(--tx-mu); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem; }
+.pub-title { font-size: 0.97rem; font-weight: 600; line-height: 1.48; margin-bottom: 0.35rem; color: var(--tx); }
+.pub-title a { transition: color var(--trans); }
+.pub-title a:hover { color: var(--acc); }
+.pub-authors { font-size: 0.83rem; color: var(--tx-m); margin-bottom: 0.5rem; line-height: 1.5; }
+.pub-doi { font-family: var(--mono); font-size: 0.7rem; color: var(--acc); border-bottom: 1px solid var(--acc-mid); transition: border-color var(--trans), color var(--trans); }
+.pub-doi:hover { border-color: var(--acc); }
+
+/* ── HONORS ── */
+.empty-box { border: 1.5px dashed var(--bd-dark); border-radius: 9px; padding: 3rem 2rem; text-align: center; color: var(--tx-mu); font-size: 0.88rem; font-style: italic; }
+
+/* ── PRESENTATIONS ── */
+.pres-list { display: flex; flex-direction: column; gap: 2.5rem; }
+.pres-row { display: grid; grid-template-columns: 96px 1fr; gap: 1.25rem; }
+@media (max-width: 520px) { .pres-row { grid-template-columns: 1fr; } }
+.pres-side { display: flex; flex-direction: column; gap: 0.4rem; padding-top: 0.1rem; }
+.pres-date { font-family: var(--mono); font-size: 0.72rem; color: var(--tx-mu); }
+.pres-badge { display: inline-block; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 8px; border-radius: 3px; width: fit-content; }
+.pres-badge.poster { background: var(--acc-light); color: var(--acc); border: 1px solid var(--acc-mid); }
+.pres-badge.oral { background: var(--bg-s); color: var(--tx-m); border: 1px solid var(--bd-dark); }
+.pres-desc { font-size: 0.9rem; color: var(--tx-m); line-height: 1.65; margin-bottom: 0.85rem; }
+.pres-desc a { color: var(--acc); text-decoration: underline; text-underline-offset: 2px; }
+
+.poster-wrap { display: block; position: relative; max-width: 540px; cursor: zoom-in; border-radius: 7px; overflow: hidden; box-shadow: var(--shadow); transition: box-shadow var(--trans); }
+.poster-wrap:hover { box-shadow: var(--shadow-lg); }
+.poster-img { width: 100%; display: block; transition: transform 0.3s ease, filter var(--trans); }
+.poster-wrap:hover .poster-img { transform: scale(1.015); }
+.poster-hint { position: absolute; bottom: 0.65rem; right: 0.65rem; background: rgba(42,24,16,0.7); color: rgba(255,248,244,0.9); font-family: var(--mono); font-size: 0.63rem; padding: 3px 8px; border-radius: 3px; opacity: 0; transition: opacity 0.2s; pointer-events: none; }
+.poster-wrap:hover .poster-hint { opacity: 1; }
+
+/* ── LIGHTBOX ── */
+.lb { display: none; position: fixed; inset: 0; background: rgba(20,8,4,0.93); z-index: 500; align-items: center; justify-content: center; cursor: zoom-out; backdrop-filter: blur(6px); }
+.lb.open { display: flex; }
+.lb img { max-width: 95vw; max-height: 93vh; object-fit: contain; border-radius: 5px; box-shadow: 0 24px 80px rgba(0,0,0,0.7); cursor: default; }
+.lb-x { position: fixed; top: 1rem; right: 1.5rem; color: rgba(255,248,244,0.5); font-size: 1.5rem; cursor: pointer; font-family: var(--mono); transition: color 0.15s; line-height: 1; }
+.lb-x:hover { color: #fff8f4; }
+
+/* ── PROJECTS ── */
+.employ-list { display: flex; flex-direction: column; }
+.employ-row { display: grid; grid-template-columns: 148px 1fr; gap: 1rem; padding: 0.85rem 0; border-bottom: 1px solid var(--bd); align-items: start; }
+.employ-row:last-child { border-bottom: none; }
+.employ-date { font-family: var(--mono); font-size: 0.7rem; color: var(--tx-mu); padding-top: 0.12rem; }
+.employ-place { font-size: 0.88rem; color: var(--tx-m); line-height: 1.55; }
+
+.proj-list { border: 1px solid var(--bd); border-radius: 9px; overflow: hidden; box-shadow: var(--shadow-sm); }
+.proj-card { background: var(--bg-card); padding: 1.2rem 1.5rem; border-bottom: 1px solid var(--bd); transition: background var(--trans); }
+.proj-card:last-child { border-bottom: none; }
+.proj-card:hover { background: var(--bg-s); }
+.proj-title { font-size: 0.94rem; font-weight: 600; color: var(--tx); line-height: 1.4; margin-bottom: 0.25rem; }
+.proj-meta { font-family: var(--mono); font-size: 0.7rem; color: var(--tx-mu); margin-bottom: 0.3rem; }
+.proj-sup { font-size: 0.79rem; color: var(--tx-mu); margin-bottom: 0.55rem; }
+.proj-sup em { font-style: normal; color: var(--acc); }
+.proj-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.2rem; }
+.proj-bullets li { font-size: 0.84rem; color: var(--tx-m); padding-left: 1.1rem; position: relative; line-height: 1.6; }
+.proj-bullets li::before { content: '▸'; position: absolute; left: 0; color: var(--acc); font-size: 0.7rem; top: 0.2rem; }
+
+/* ── BLOG ── */
+.blog-year-hd { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--tx-mu); margin: 0 0 0.75rem; display: flex; align-items: center; gap: 0.75rem; }
+.blog-year-hd::after { content:''; flex:1; height:1px; background: var(--bd); }
+
+.blog-card {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  gap: 1rem;
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid var(--bd);
+  border-radius: 6px;
+  transition: background var(--trans);
+  align-items: start;
+  text-decoration: none;
+  color: inherit;
+}
+.blog-card:hover { background: var(--bg-s); }
+.blog-card:last-child { border-bottom: none; }
+.blog-card-date { font-family: var(--mono); font-size: 0.7rem; color: var(--tx-mu); padding-top: 0.15rem; }
+.blog-card-title { font-size: 0.95rem; font-weight: 600; color: var(--tx); line-height: 1.4; margin-bottom: 0.2rem; }
+.blog-card:hover .blog-card-title { color: var(--acc); }
+.blog-card-excerpt { font-size: 0.82rem; color: var(--tx-m); line-height: 1.5; }
+.blog-card-arrow { font-size: 0.85rem; color: var(--tx-mu); padding-top: 0.15rem; }
+.blog-card:hover .blog-card-arrow { color: var(--acc); }
+@media (max-width: 520px) { .blog-card { grid-template-columns: 1fr; } .blog-card-arrow { display: none; } }
+
+/* ── FOOTER ── */
+footer { border-top: 1px solid var(--bd); padding: 1.4rem 4rem 1.4rem 3rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-family: var(--mono); font-size: 0.72rem; color: var(--tx-mu); transition: border-color var(--trans), color var(--trans); }
+@media (max-width: 900px) { footer { padding: 1.4rem 1.75rem; flex-direction: column; text-align: center; } }
+
+</style>
+</head>
+<body>
+
+<div class="lb" id="lb" onclick="closeLb()">
+  <span class="lb-x" onclick="closeLb()">✕</span>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+
+<nav class="nav">
+  <span class="nav-brand" onclick="show('about')">Haochang Luo <span>罗昊昌</span></span>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="" onclick="show('about');return false;"    data-s="about"    class="active">About</a></li>
+    <li><a href="" onclick="show('pubs');return false;"     data-s="pubs">Publications</a></li>
+    <li><a href="" onclick="show('honors');return false;"   data-s="honors">Honors</a></li>
+    <li><a href="" onclick="show('pres');return false;"     data-s="pres">Presentations</a></li>
+    <li><a href="" onclick="show('projects');return false;" data-s="projects">Projects</a></li>
+    <li><a href="" onclick="show('blog');return false;"     data-s="blog">Blog</a></li>
+  </ul>
+  <div class="nav-controls">
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" aria-label="Toggle dark mode">☽</button>
+    <button class="burger" id="burger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sb-photo-wrap">
+      <img class="sb-photo" src="https://hc-luo.github.io/images/android-chrome-512x512.png" alt="Haochang Luo">
+      <div class="sb-photo-ring"></div>
+    </div>
+    <div class="sb-name">Haochang Luo</div>
+    <div class="sb-name-sub">罗昊昌 · haw-chung loh</div>
+    <div class="sb-role">Postdoctoral Research Scientist<br>City University of New York<br>City College &nbsp;·&nbsp; New York, US</div>
+
+    <div class="sb-section">Contact</div>
+    <ul class="sb-links">
+      <li><a href="mailto:hluo@ccny.cuny.edu"><span class="sb-ico">✉</span>hluo@ccny.cuny.edu</a></li>
+      <li><a href="https://scholar.google.com/citations?user=ktVljAsAAAAJ" target="_blank"><span class="sb-ico">◎</span>Google Scholar</a></li>
+      <li><a href="https://www.researchgate.net/profile/Haochang-Luo" target="_blank"><span class="sb-ico">◈</span>ResearchGate</a></li>
+      <li><a href="https://www.linkedin.com/in/haochang-luo" target="_blank"><span class="sb-ico">▣</span>LinkedIn</a></li>
+      <li><a href="https://github.com/HC-Luo" target="_blank"><span class="sb-ico">⌥</span>GitHub</a></li>
+      <li><a href="https://drive.google.com/file/d/1vfEEaiP92Jl64LsrFcJ32AlHUVuMUwc5/view?usp=share_link" target="_blank"><span class="sb-ico">↓</span>Curriculum Vitae</a></li>
+    </ul>
+
+    <div class="sb-section">Tools</div>
+    <div class="sb-tags">
+      <span class="sb-tag">Python</span><span class="sb-tag">NCL</span><span class="sb-tag">Matlab</span>
+      <span class="sb-tag">numpy</span><span class="sb-tag">xarray</span><span class="sb-tag">pytorch</span>
+      <span class="sb-tag">cartopy</span><span class="sb-tag">Overleaf</span>
+    </div>
+
+    <div class="sb-section">Research</div>
+    <div class="sb-tags">
+      <span class="sb-tag">Convection</span><span class="sb-tag">Tropical Waves</span>
+      <span class="sb-tag">ITCZ</span><span class="sb-tag">Monsoons</span>
+      <span class="sb-tag">AEWs</span><span class="sb-tag">ML</span>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section class="section active" id="s-about">
+      <p class="about-lede">My name is Haochang Luo — pronounced "Haw-Chung Loh", written as 罗昊昌.<br>Like my name, I study the sky.</p>
+      <div class="about-text">
+        <p>I am a postdoctoral researcher at the City University of New York, City College. 🗽 My work focuses on the dynamics of large-scale convective systems and their interactions with other systems. Most of my targets are in the tropics and subtropics — the Indian Summer Monsoon Low Pressure Systems (MLPSs) and African Easterly Waves (AEWs). Recently I have been eyeballing the Intertropical Convergence Zone (ITCZ) and actively studying Machine Learning.</p>
+        <p>My research interests span precipitation, convection, fluid dynamics, thermodynamics, tropical waves, eddies and disturbances. My approaches include linear regressions, composites, empirical orthogonal function (EOF / PCA), maximum covariance analysis, and power spectrum analysis.</p>
+        <p>With 7+ years of Linux coding experience I am proficient in Python, NCL and Matlab. Daily packages include numpy, xarray, matplotlib, cartopy, pandas, pytorch, and self-developed algorithms. Overleaf is my primary writing tool.</p>
+      </div>
+      <div class="meta-grid">
+        <div class="meta-cell"><div class="meta-cell-lbl">Position</div><div class="meta-cell-val">Postdoctoral Researcher</div></div>
+        <div class="meta-cell"><div class="meta-cell-lbl">Institution</div><div class="meta-cell-val">CUNY City College</div></div>
+        <div class="meta-cell"><div class="meta-cell-lbl">Degree</div><div class="meta-cell-val">Ph.D. Atmospheric Sciences</div></div>
+        <div class="meta-cell"><div class="meta-cell-lbl">Location</div><div class="meta-cell-val">New York, US</div></div>
+      </div>
+      <div class="news-box">
+        <div class="news-box-hd">🔥 &nbsp;Recent Activities</div>
+        <div class="news-row"><span class="news-date">2025.05</span><span class="news-text">Joining Hackathon at GFDL.</span></div>
+        <div class="news-row"><span class="news-date">2025.04</span><span class="news-text">Paper on developers and nondevelopers got published.</span></div>
+        <div class="news-row"><span class="news-date">2025.03</span><span class="news-text">Started a new project about machine learning.</span></div>
+        <div class="news-row"><span class="news-date">2025.02</span><span class="news-text">Finished trip to Japan and China.</span></div>
+      </div>
+      <div class="divline">Education</div>
+      <div class="edu-list">
+        <div class="edu-row">
+          <div class="edu-yr">2019<br>→ 2024</div>
+          <div><div class="edu-flag">🇺🇸</div><div class="edu-deg">Ph.D. — Climate Sciences and Engineering</div><div class="edu-place">Dept. of Climate and Space Sciences and Engineering (CLASP)<br>University of Michigan, Ann Arbor, MI, USA</div></div>
+        </div>
+        <div class="edu-row">
+          <div class="edu-yr">2018<br>→ 2019</div>
+          <div><div class="edu-flag">🇺🇸</div><div class="edu-deg">M.Eng. — Applied Climate</div><div class="edu-place">Dept. of Climate and Space Sciences and Engineering (CLASP)<br>University of Michigan, Ann Arbor, MI, USA</div></div>
+        </div>
+        <div class="edu-row">
+          <div class="edu-yr">2014<br>→ 2018</div>
+          <div><div class="edu-flag">🇨🇳</div><div class="edu-deg">B.Sc. — Atmospheric Sciences</div><div class="edu-place">College of Atmospheric Sciences<br>Nanjing University of Information Science & Technology (NUIST)</div></div>
+        </div>
+      </div>
+      <a class="cv-btn" href="https://drive.google.com/file/d/1vfEEaiP92Jl64LsrFcJ32AlHUVuMUwc5/view?usp=share_link" target="_blank">↓ &nbsp; Download CV</a>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section" id="s-pubs">
+      <div class="sec-hd"><span class="sec-icon">📄</span><div><h1 class="sec-title">Publications</h1></p></div></div>
+      <div class="pub-list">
+        <div class="pub-card">
+          <div class="pub-venue">Journal of the Atmospheric Sciences &nbsp;·&nbsp; 2025</div>
+          <div class="pub-title"><a href="https://doi.org/10.1175/JAS-D-24-0125.1" target="_blank">Thermodynamic Processes Governing the Evolution of Developing and Strong Non-developing African Easterly Waves</a></div>
+          <div class="pub-authors">Víctor C. Mayta, Ángel F. Adames Corraliza, Kayleen Torres Maldonado, <strong>Haochang Luo</strong>, Kelly M. Núñez Ocasio</div>
+          <a class="pub-doi" href="https://doi.org/10.1175/JAS-D-24-0125.1" target="_blank">10.1175/JAS-D-24-0125.1 ↗</a>
+        </div>
+        <div class="pub-card">
+          <div class="pub-venue">PhD Dissertation &nbsp;·&nbsp; University of Michigan &nbsp;·&nbsp; 2024</div>
+          <div class="pub-title"><a href="https://dx.doi.org/10.7302/22830" target="_blank">Observed Convective and Moist Dynamics in Extratropical and Tropical Synoptic-scale Circulation during Boreal Summer</a></div>
+          <div class="pub-authors"><strong>Haochang Luo</strong></div>
+          <a class="pub-doi" href="https://dx.doi.org/10.7302/22830" target="_blank">10.7302/22830 ↗</a>
+        </div>
+        <div class="pub-card">
+          <div class="pub-venue">Journal of the Atmospheric Sciences &nbsp;·&nbsp; 2023</div>
+          <div class="pub-title"><a href="https://doi.org/10.1175/JAS-D-22-0252.1" target="_blank">Barotropic and Moisture-vortex growth of Monsoon Low Pressure Systems</a></div>
+          <div class="pub-authors"><strong>Haochang Luo</strong>, Ángel F. Adames, Richard B. Rood</div>
+          <a class="pub-doi" href="https://doi.org/10.1175/JAS-D-22-0252.1" target="_blank">10.1175/JAS-D-22-0252.1 ↗</a>
+        </div>
+        <div class="pub-card">
+          <div class="pub-venue">Journal of the Atmospheric Sciences &nbsp;·&nbsp; 2022</div>
+          <div class="pub-title"><a href="https://doi.org/10.1175/JAS-D-21-0161.1" target="_blank">Moist Static Potential Vorticity Budget in Tropical Motion Systems</a></div>
+          <div class="pub-authors">Ángel F. Adames, Rosa M. Vargas Martes, <strong>Haochang Luo</strong>, Richard B. Rood</div>
+          <a class="pub-doi" href="https://doi.org/10.1175/JAS-D-21-0161.1" target="_blank">10.1175/JAS-D-21-0161.1 ↗</a>
+        </div>
+        <div class="pub-card">
+          <div class="pub-venue">Journal of Climate &nbsp;·&nbsp; 2021</div>
+          <div class="pub-title"><a href="https://doi.org/10.1175/JCLI-D-20-0608.1" target="_blank">A Northern Hemispheric Wave Train Associated with Interannual Variations in the Bermuda High during Boreal Summer</a></div>
+          <div class="pub-authors"><strong>Haochang Luo</strong>, Ángel F. Adames, Richard B. Rood</div>
+          <a class="pub-doi" href="https://doi.org/10.1175/JCLI-D-20-0608.1" target="_blank">10.1175/JCLI-D-20-0608.1 ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HONORS -->
+    <section class="section" id="s-honors">
+      <div class="sec-hd"><span class="sec-icon">🎖</span><div><h1 class="sec-title">Honors & Awards</h1></p></div></div>
+      <div class="empty-box">Under construction.</div>
+    </section>
+
+    <!-- PRESENTATIONS -->
+    <section class="section" id="s-pres">
+      <div class="sec-hd"><span class="sec-icon">🎤</span><div><h1 class="sec-title">Presentations</h1></p></div></div>
+      <div class="pres-list">
+        <div class="pres-row">
+          <div class="pres-side"><span class="pres-date">2024.12</span><span class="pres-badge poster">Poster</span></div>
+          <div><p class="pres-desc">AGU — Advances in Theoretical Understanding of Atmospheric Convection Across Scales session. Washington D.C., USA.</p>
+          <div class="poster-wrap" onclick="openLb('https://hc-luo.github.io/images/AGU2024poster.png','AGU 2024 Poster')"><img class="poster-img" src="https://hc-luo.github.io/images/AGU2024poster.png" alt="AGU 2024 Poster"><span class="poster-hint">click to zoom ↗</span></div></div>
+        </div>
+        <div class="pres-row">
+          <div class="pres-side"><span class="pres-date">2024.11</span><span class="pres-badge oral">Oral</span></div>
+          <div><p class="pres-desc">Departmental seminar, Earth and Atmospheric Sciences, City College of New York, New York, NY, USA.</p></div>
+        </div>
+        <div class="pres-row">
+          <div class="pres-side"><span class="pres-date">2023.12</span><span class="pres-badge poster">Poster</span></div>
+          <div><p class="pres-desc">AGU — Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates session. San Francisco, CA, USA.</p>
+          <div class="poster-wrap" onclick="openLb('https://hc-luo.github.io/images/AGU2023poster.png','AGU 2023 Poster')"><img class="poster-img" src="https://hc-luo.github.io/images/AGU2023poster.png" alt="AGU 2023 Poster"><span class="poster-hint">click to zoom ↗</span></div></div>
+        </div>
+        <div class="pres-row">
+          <div class="pres-side"><span class="pres-date">2023.01</span><span class="pres-badge oral">Oral</span></div>
+          <div><p class="pres-desc">103rd AMS — 11th Symposium on the Madden-Julian Oscillation and Sub-Seasonal Monsoon Variability. Denver, CO, USA.</p></div>
+        </div>
+        <div class="pres-row">
+          <div class="pres-side"><span class="pres-date">2022.12</span><span class="pres-badge poster">Poster</span></div>
+          <div><p class="pres-desc">AGU — Atmosphere, Ocean, and Land Processes in the Maritime Continent and Indo-Pacific session. Chicago, IL, USA.</p>
+          <div class="poster-wrap" onclick="openLb('https://hc-luo.github.io/images/AGU2022poster.png','AGU 2022 Poster')"><img class="poster-img" src="https://hc-luo.github.io/images/AGU2022poster.png" alt="AGU 2022 Poster"><span class="poster-hint">click to zoom ↗</span></div></div>
+        </div>
+        <div class="pres-row">
+          <div class="pres-side"><span class="pres-date">2022.10</span><span class="pres-badge oral">Oral</span></div>
+          <div><p class="pres-desc">Departmental seminar, Atmospheric and Oceanic Sciences, University of Wisconsin, Madison, WI, USA. <a href="https://youtu.be/iA7BUL5gc94" target="_blank">[video ↗]</a></p></div>
+        </div>
+        <div class="pres-row">
+          <div class="pres-side"><span class="pres-date">2020.01</span><span class="pres-badge poster">Poster</span></div>
+          <div><p class="pres-desc">100th AMS — 33rd Conference on Climate Variability and Change. Boston, MA, USA.</p>
+          <div class="poster-wrap" onclick="openLb('https://hc-luo.github.io/images/AMS2020poster.png','AMS 2020 Poster')"><img class="poster-img" src="https://hc-luo.github.io/images/AMS2020poster.png" alt="AMS 2020 Poster"><span class="poster-hint">click to zoom ↗</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="s-projects">
+      <div class="sec-hd"><span class="sec-icon">🔬</span><div><h1 class="sec-title">Research Projects</h1></p></div></div>
+      <div class="proj-list">
+        <div class="proj-card">
+          <div class="proj-title">Transient eddy energy flux and interactions with the Intertropical Convergence Zone</div>
+          <div class="proj-meta">2024.04 – present</div>
+          <div class="proj-sup">Supervisors: <em>Spencer A. Hill, Michela Biasutti</em></div>
+          <ul class="proj-bullets"><li>Adjusted the moist static energy budget in reanalysis data.</li><li>Conducted power spectrum analysis on transient eddies; calculated eddy diffusion.</li><li>Correlated eddy activity onto ITCZ dynamics.</li></ul>
+        </div>
+        <div class="proj-card">
+          <div class="proj-title">Monsoon low pressure system growth and propagation</div>
+          <div class="proj-meta">2021.05 – 2023.12</div>
+          <div class="proj-sup">Supervisors: <em>Ángel F. Adames-Corraliza, Richard B. Rood</em></div>
+          <ul class="proj-bullets"><li>Explained mechanisms governing growth and westward propagation of Indian summer monsoon low pressure systems.</li><li>Investigated moist static energy and perturbation kinetic energy budgets.</li><li>Reviewed conventional and newly-developed instabilities theories.</li></ul>
+        </div>
+        <div class="proj-card">
+          <div class="proj-title">Moist static potential vorticity and its applications to tropical systems</div>
+          <div class="proj-meta">2020.07</div>
+          <div class="proj-sup">Supervisors: <em>Ángel F. Adames-Corraliza, Richard B. Rood</em></div>
+          <ul class="proj-bullets"><li>Developed the moist static potential vorticity framework in the tropics.</li></ul>
+        </div>
+        <div class="proj-card">
+          <div class="proj-title">Northern hemispheric wave train associated with the Bermuda High during boreal summer</div>
+          <div class="proj-meta">2019.05 – 2021.05</div>
+          <div class="proj-sup">Supervisors: <em>Ángel F. Adames-Corraliza, Richard B. Rood</em></div>
+          <ul class="proj-bullets"><li>Investigated spatial and temporal variation of the Bermuda High in July–August via linear regression analysis.</li><li>Discovered a Rossby wave train over North America and eastern-north Atlantic related to the Bermuda High.</li><li>Explained summer precipitation variations over the southeastern US associated with the wave train.</li></ul>
+        </div>
+        <div class="proj-card">
+          <div class="proj-title">Simulating a cold air outbreak with and without data assimilation <span style="font-weight:400;color:var(--tx-mu)">(B.S. Dissertation)</span></div>
+          <div class="proj-meta">2017.12 – 2018.05</div>
+          <div class="proj-sup">Supervisors: <em>X. San Liang, Ying Wang</em></div>
+          <ul class="proj-bullets"><li>Utilized WRF to simulate a cold air outbreak in east Asia, January 2016.</li><li>Implemented data assimilation using ground-based observations; compared outputs with and without assimilation.</li><li>Analyzed temperature, snowfall, and isentropic potential vorticity fields from WRF.</li></ul>
+        </div>
+        <div class="proj-card">
+          <div class="proj-title">Tracking method of updrafts in Tropical Cyclones</div>
+          <div class="proj-meta">2016.06 – 2017.06</div>
+          <div class="proj-sup">Supervisor: <em>Qingqing Li</em></div>
+          <ul class="proj-bullets"><li>Improved SPOUT (Statistical and Programmable Objective Updraft Tracker) for TCM4 simulation results.</li><li>Studied distribution, types, movement, and lifespan of updrafts in spiral rain bands.</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="section" id="s-blog">
+      <div class="sec-hd"><span class="sec-icon">✍</span><div><h1 class="sec-title">Blog</h1></p></div></div>
+
+      <div class="blog-year-hd">2026</div>
+
+      <a class="blog-card" href="posts/2026-03-11-thoughts-on-llms.html" onclick="event.stopPropagation()">
+        <span class="blog-card-date">2026.03</span>
+        <div>
+          <div class="blog-card-title">Thoughts on LLMs</div>
+          <div class="blog-card-excerpt">On training data, the hierarchy of replaceability, and whether ensemble forecasting methods could help quantify LLM uncertainty.</div>
+        </div>
+        <span class="blog-card-arrow">→</span>
+      </a>
+
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <span>© 2024 Haochang Luo</span>
+  <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bfd7d3cad0ffdcdcd1c691dccad1c691dadbca">[email&#160;protected]</a></span>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function show(name) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  document.getElementById('s-' + name).classList.add('active');
+  document.querySelector('[data-s="' + name + '"]').classList.add('active');
+  document.getElementById('navLinks').classList.remove('open');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+const themeBtn = document.getElementById('themeBtn');
+function applyTheme(dark) {
+  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  themeBtn.textContent = dark ? '○' : '☽';
+  localStorage.setItem('hl-theme', dark ? 'dark' : 'light');
+}
+function toggleTheme() { applyTheme(document.documentElement.getAttribute('data-theme') !== 'dark'); }
+const saved = localStorage.getItem('hl-theme');
+const sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+applyTheme(saved ? saved === 'dark' : sysDark);
+
+// On page load: if coming back from a post, restore the right section
+const urlSection = new URLSearchParams(window.location.search).get('section');
+if (urlSection) {
+  show(urlSection);
+  // Clean the URL without reloading
+  history.replaceState(null, '', window.location.pathname);
+}
+
+function openLb(src, alt) {
+  document.getElementById('lb-img').src = src;
+  document.getElementById('lb-img').alt = alt || '';
+  document.getElementById('lb').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLb() {
+  document.getElementById('lb').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+</script>
+</body>
+</html>
