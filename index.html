@@ -321,6 +321,21 @@ main { padding: 3rem 4rem 6rem 3rem; min-width: 0; }
 .proj-bullets li { font-size: 0.84rem; color: var(--tx-m); padding-left: 1.1rem; position: relative; line-height: 1.6; }
 .proj-bullets li::before { content: '▸'; position: absolute; left: 0; color: var(--acc); font-size: 0.7rem; top: 0.2rem; }
 
+/* ── WORK EXPERIENCE (subsection of Projects) ── */
+.work-list { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--bd); border-radius: 9px; overflow: hidden; box-shadow: var(--shadow-sm); }
+.work-card { background: var(--bg-card); padding: 1.2rem 1.5rem; border-bottom: 1px solid var(--bd); transition: background var(--trans); position: relative; }
+.work-card:last-child { border-bottom: none; }
+.work-card:hover { background: var(--bg-s); }
+.work-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--acc); opacity: 0; transition: opacity var(--trans); }
+.work-card:hover::before { opacity: 1; }
+.work-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.2rem; }
+.work-title { font-size: 0.94rem; font-weight: 600; color: var(--tx); line-height: 1.4; }
+.work-date { font-family: var(--mono); font-size: 0.68rem; color: var(--tx-mu); white-space: nowrap; padding-top: 0.15rem; }
+.work-org { font-size: 0.82rem; color: var(--acc); margin-bottom: 0.55rem; font-weight: 500; }
+.work-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.2rem; }
+.work-bullets li { font-size: 0.84rem; color: var(--tx-m); padding-left: 1.1rem; position: relative; line-height: 1.6; }
+.work-bullets li::before { content: '▸'; position: absolute; left: 0; color: var(--acc); font-size: 0.7rem; top: 0.2rem; }
+
 /* ── BLOG ── */
 .blog-year-hd { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--tx-mu); margin: 0 0 0.75rem; display: flex; align-items: center; gap: 0.75rem; }
 .blog-year-hd::after { content:''; flex:1; height:1px; background: var(--bd); }
@@ -564,6 +579,36 @@ footer { border-top: 1px solid var(--bd); padding: 1.4rem 4rem 1.4rem 3rem; disp
     <!-- PROJECTS -->
     <section class="section" id="s-projects">
       <div class="sec-hd"><span class="sec-icon">🔬</span><div><h1 class="sec-title">Research Projects</h1></p></div></div>
+
+      <div class="divline">Work Experience</div>
+      <div class="work-list">
+        <div class="work-card">
+          <div class="work-header">
+            <div class="work-title">Postdoctoral Research Scientist</div>
+            <div class="work-date">2024.04 – present</div>
+          </div>
+          <div class="work-org">The City University of New York — New York, NY</div>
+          <ul class="work-bullets">
+            <li>Designed and deployed deep learning models (CNNs, ResNet, transformer) to classify developing vs. non-developing storms; uncovered the thermodynamic environment for storm development.</li>
+            <li>Co-hosted and mentored the machine learning working group of the department, fostering collaboration across data-driven research projects.</li>
+            <li>Conducted large-scale analysis of tropical energy transport, generating insights with applications to climate forecasting and risk assessment.</li>
+          </ul>
+        </div>
+        <div class="work-card">
+          <div class="work-header">
+            <div class="work-title">Research Intern</div>
+            <div class="work-date">2020.10 – 2023.10</div>
+          </div>
+          <div class="work-org">University of Wisconsin — Madison, WI</div>
+          <ul class="work-bullets">
+            <li>Identified key atmospheric drivers of rainfall variability using statistical analysis and modeling, supporting improved regional climate forecasts.</li>
+            <li>Built scalable workflows for managing and analyzing multi-terabyte climate datasets, reducing processing time for the research group.</li>
+            <li>Presented findings at international conferences (AGU, AMS), strengthening institutional partnerships.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="divline" style="margin-top:2.5rem">Research Projects</div>
       <div class="proj-list">
         <div class="proj-card">
           <div class="proj-title">Identifying tropical waves that develop into cyclones using machine learning</div>
@@ -632,10 +677,10 @@ footer { border-top: 1px solid var(--bd); padding: 1.4rem 4rem 1.4rem 3rem; disp
 
 <footer>
   <span>© 2024 Haochang Luo</span>
-  <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bfd7d3cad0ffdcdcd1c691dccad1c691dadbca">[email&#160;protected]</a></span>
+  <span><a href="mailto:hluo@ccny.cuny.edu">hluo@ccny.cuny.edu</a></span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function show(name) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
