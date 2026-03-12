@@ -376,14 +376,14 @@ footer { border-top: 1px solid var(--bd); padding: 1.4rem 4rem 1.4rem 3rem; disp
 </div>
 
 <nav class="nav">
-  <span class="nav-brand" onclick="show('about')">Haochang Luo <span>罗昊昌</span></span>
+  <span class="nav-brand" onclick="event.preventDefault();show('about')">Haochang Luo <span>罗昊昌</span></span>
   <ul class="nav-links" id="navLinks">
-    <li><a href="" onclick="show('about');return false;"    data-s="about"    class="active">About</a></li>
-    <li><a href="" onclick="show('pubs');return false;"     data-s="pubs">Publications</a></li>
-    <li><a href="" onclick="show('honors');return false;"   data-s="honors">Honors</a></li>
-    <li><a href="" onclick="show('pres');return false;"     data-s="pres">Presentations</a></li>
-    <li><a href="" onclick="show('projects');return false;" data-s="projects">Projects</a></li>
-    <li><a href="" onclick="show('blog');return false;"     data-s="blog">Blog</a></li>
+    <li><a href="#" onclick="event.preventDefault();show('about');"    data-s="about"    class="active">About</a></li>
+    <li><a href="#" onclick="event.preventDefault();show('pubs');"     data-s="pubs">Publications</a></li>
+    <li><a href="#" onclick="event.preventDefault();show('honors');"   data-s="honors">Honors</a></li>
+    <li><a href="#" onclick="event.preventDefault();show('pres');"     data-s="pres">Presentations</a></li>
+    <li><a href="#" onclick="event.preventDefault();show('projects');" data-s="projects">Projects</a></li>
+    <li><a href="#" onclick="event.preventDefault();show('blog');"     data-s="blog">Blog</a></li>
   </ul>
   <div class="nav-controls">
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" aria-label="Toggle dark mode">☽</button>
@@ -713,4 +713,13 @@ function openLb(src, alt) {
   document.getElementById('lb-img').src = src;
   document.getElementById('lb-img').alt = alt || '';
   document.getElementById('lb').classList.add('open');
-  document.body.style.overflow 
+  document.body.style.overflow = 'hidden';
+}
+function closeLb() {
+  document.getElementById('lb').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+</script>
+</body>
+</html>
