@@ -132,12 +132,62 @@ h1.post-title {
 }
 .post-footer a:hover { color: var(--acc-hover); text-decoration: underline; }
 .post-footer-author { font-family: var(--mono); font-size: 0.7rem; color: var(--tx-mu); }
+
+/* Share */
+.share-wrap { position: relative; display: inline-flex; }
+.share-btn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-family: var(--sans); font-size: 0.78rem; font-weight: 600;
+  color: var(--tx-mu); background: var(--bg-s);
+  border: 1px solid var(--bd); border-radius: 6px;
+  padding: 0.36rem 0.85rem; cursor: pointer;
+  transition: background var(--trans), color var(--trans), border-color var(--trans);
+  letter-spacing: 0.02em;
+}
+.share-btn:hover { background: var(--bd); color: var(--tx); }
+.share-btn svg { width: 13px; height: 13px; flex-shrink: 0; }
+
+.share-menu {
+  display: none; position: absolute; bottom: calc(100% + 8px); right: 0;
+  background: var(--bg); border: 1px solid var(--bd);
+  border-radius: 8px; overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  min-width: 168px; z-index: 200;
+  animation: fadeUp 0.15s ease;
+}
+.share-menu.open { display: block; }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.share-menu-item {
+  display: flex; align-items: center; gap: 0.6rem;
+  width: 100%; padding: 0.6rem 1rem;
+  font-family: var(--sans); font-size: 0.8rem; font-weight: 500;
+  color: var(--tx-m); background: none; border: none;
+  cursor: pointer; text-align: left;
+  transition: background var(--trans), color var(--trans);
+}
+.share-menu-item:hover { background: var(--bg-s); color: var(--tx); }
+.share-menu-item svg { width: 14px; height: 14px; flex-shrink: 0; color: var(--tx-mu); }
+.share-menu-item.copied { color: #2a7a2a; }
+
+.share-toast {
+  position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%) translateY(12px);
+  background: var(--tx); color: var(--bg);
+  font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.04em;
+  padding: 0.5rem 1.2rem; border-radius: 6px;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 9999;
+}
+.share-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 </style>
 </head>
 <body>
 
 <div class="topbar">
-  <a class="topbar-back" href="../index.html">← Blog</a>
+  <a class="topbar-back" href="../index.html">← Back to homepage</a>
   <a class="topbar-home" href="../index.html">Haochang Luo</a>
   <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">☽</button>
 </div>
@@ -195,9 +245,42 @@ We'll see how it develops.</p>
   </div>
 
   <div class="post-footer">
-    <a href="../index.html">← Back to homepage</a>
-    <div class="post-footer-author">Haochang Luo &nbsp;·&nbsp; March 2026</div>
+    <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Back to top</a>
+    <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+      <div class="post-footer-author">Haochang Luo &nbsp;·&nbsp; March 2026</div>
+      <div class="share-wrap" id="shareWrap">
+        <button class="share-btn" id="shareBtn" onclick="toggleShareMenu(event)" aria-label="Share">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="3" r="1.5"/><circle cx="4" cy="8" r="1.5"/><circle cx="12" cy="13" r="1.5"/>
+            <line x1="5.4" y1="7.1" x2="10.6" y2="4"/><line x1="5.4" y1="8.9" x2="10.6" y2="12"/>
+          </svg>
+          Share
+        </button>
+        <div class="share-menu" id="shareMenu">
+          <button class="share-menu-item" onclick="copyLink()">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6.5 9.5a3.5 3.5 0 0 0 4.95 0l2-2a3.5 3.5 0 0 0-4.95-4.95l-1 1"/>
+              <path d="M9.5 6.5a3.5 3.5 0 0 0-4.95 0l-2 2a3.5 3.5 0 0 0 4.95 4.95l1-1"/>
+            </svg>
+            Copy link
+          </button>
+          <button class="share-menu-item" onclick="shareX()">
+            <svg viewBox="0 0 16 16" fill="currentColor">
+              <path d="M12.6 1h2.2L9.9 6.8 15.5 15h-4l-3.5-4.7L4.2 15H2L7 8.9 1.5 1h4.1l3.2 4.2L12.6 1zm-.8 12.6h1.2L4.3 2.3H3L11.8 13.6z"/>
+            </svg>
+            Share on X
+          </button>
+          <button class="share-menu-item" id="nativeShareBtn" onclick="nativeShare()" style="display:none">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 1v9M5 4l3-3 3 3M3 10v4h10v-4"/>
+            </svg>
+            More options…
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="share-toast" id="shareToast">Link copied</div>
 
 </div>
 
@@ -224,6 +307,58 @@ function toggleTheme() {
 const saved = localStorage.getItem('hl-theme');
 const sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 applyTheme(saved ? saved === 'dark' : sysDark);
+
+// Show native share on supported devices
+if (navigator.share) {
+  document.getElementById('nativeShareBtn').style.display = 'flex';
+}
+
+function toggleShareMenu(e) {
+  e.stopPropagation();
+  document.getElementById('shareMenu').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  if (!document.getElementById('shareWrap').contains(e.target)) {
+    document.getElementById('shareMenu').classList.remove('open');
+  }
+});
+
+function showToast(msg) {
+  const t = document.getElementById('shareToast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+function copyLink() {
+  navigator.clipboard.writeText(window.location.href).then(() => {
+    document.getElementById('shareMenu').classList.remove('open');
+    showToast('Link copied');
+  }).catch(() => {
+    const ta = document.createElement('textarea');
+    ta.value = window.location.href;
+    document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    document.getElementById('shareMenu').classList.remove('open');
+    showToast('Link copied');
+  });
+}
+
+function shareX() {
+  const text = encodeURIComponent('Thoughts on LLMs — by Haochang Luo');
+  const url  = encodeURIComponent(window.location.href);
+  window.open('https://x.com/intent/tweet?text=' + text + '&url=' + url, '_blank');
+  document.getElementById('shareMenu').classList.remove('open');
+}
+
+function nativeShare() {
+  navigator.share({
+    title: 'Thoughts on LLMs',
+    text:  'Thoughts on LLMs — by Haochang Luo',
+    url:   window.location.href
+  }).catch(() => {});
+  document.getElementById('shareMenu').classList.remove('open');
+}
 </script>
 </body>
 </html>
