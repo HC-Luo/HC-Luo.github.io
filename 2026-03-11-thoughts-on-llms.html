@@ -137,7 +137,7 @@ h1.post-title {
 <body>
 
 <div class="topbar">
-  <a class="topbar-back" href="../index.html">← Back to homepage</a>
+  <span id="topbar-back" class="topbar-back" style="cursor:pointer"></span>
   <a class="topbar-home" href="../index.html">Haochang Luo</a>
   <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">☽</button>
 </div>
@@ -195,13 +195,19 @@ We'll see how it develops.</p>
   </div>
 
   <div class="post-footer">
-    <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ Back to top</a>
+    <span id="footer-back" style="cursor:pointer;font-size:0.82rem;color:var(--acc);font-weight:500;"></span>
     <div class="post-footer-author">Haochang Luo &nbsp;·&nbsp; March 2026</div>
   </div>
 
 </div>
 
 <script>
+document.getElementById('topbar-back').innerHTML = '← Back to homepage';
+document.getElementById('topbar-back').onclick = function() { window.location.href = '../index.html'; };
+
+document.getElementById('footer-back').innerHTML = '↑ Back to top';
+document.getElementById('footer-back').onclick = function() { window.scrollTo({top:0,behavior:'smooth'}); };
+  
 function setLang(lang) {
   document.getElementById('body-en').classList.toggle('active', lang === 'en');
   document.getElementById('body-zh').classList.toggle('active', lang === 'zh');
