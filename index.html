@@ -288,6 +288,43 @@ main { padding: 3rem 4rem 6rem 3rem; min-width: 0; }
 .pres-desc { font-size: 0.9rem; color: var(--tx-m); line-height: 1.65; margin-bottom: 0.85rem; }
 .pres-desc a { color: var(--acc); text-decoration: underline; text-underline-offset: 2px; }
 
+/* ── ABSTRACT TOGGLE ── */
+.abstract-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--acc);
+  background: var(--acc-light);
+  border: 1px solid var(--acc-mid);
+  padding: 3px 10px 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  transition: background var(--trans), border-color var(--trans), color var(--trans);
+  font-family: var(--sans);
+}
+.abstract-btn:hover { background: var(--acc-mid); border-color: var(--acc); }
+.abstract-btn .ab-arrow { font-size: 0.6rem; transition: transform 0.2s ease; display: inline-block; }
+.abstract-btn.open .ab-arrow { transform: rotate(90deg); }
+
+.abstract-panel {
+  display: none;
+  font-size: 0.86rem;
+  color: var(--tx-m);
+  line-height: 1.75;
+  background: var(--bg-s);
+  border-left: 3px solid var(--acc-mid);
+  border-radius: 0 6px 6px 0;
+  padding: 0.85rem 1.1rem;
+  margin-bottom: 0.85rem;
+  max-width: 640px;
+  transition: background var(--trans), border-color var(--trans);
+}
+.abstract-panel.open { display: block; animation: fadein 0.2s ease both; }
+
 .poster-wrap { display: block; position: relative; max-width: 540px; cursor: zoom-in; border-radius: 7px; overflow: hidden; box-shadow: var(--shadow); transition: box-shadow var(--trans); }
 .poster-wrap:hover { box-shadow: var(--shadow-lg); }
 .poster-img { width: 100%; display: block; transition: transform 0.3s ease, filter var(--trans); }
@@ -529,48 +566,80 @@ footer { border-top: 1px solid var(--bd); padding: 1.4rem 4rem 1.4rem 3rem; disp
       <div class="pres-list">
         <div class="pres-row">
           <div class="pres-side"><span class="pres-date">2026.01</span><span class="pres-badge oral">Oral</span></div>
-          <div><p class="pres-desc">106th AMS — First Symposium on Tropical Meteorology and Climate. Houston, TX, USA.</p></div>
+          <div>
+            <p class="pres-desc">106th AMS — First Symposium on Tropical Meteorology and Climate. Houston, TX, USA.</p>
+            <button class="abstract-btn" onclick="toggleAbstract(this)"><span class="ab-arrow">▶</span> Abstract</button>
+            <div class="abstract-panel">African Easterly Waves (AEWs) are synoptic-scale atmospheric disturbances that serve as precursors to tropical cyclones (TCs) in the North Atlantic and North Africa. As climate changes, TC activities are increasingly frequent, leading to exponentially growing socio-economic losses. So understanding the physical mechanisms governing the tropical cyclogenesis (TCG) of AEWs remains a crucial problem. Competing theoretical frameworks, including baroclinic instability, barotropic instability, and moisture-vortex instability (MVI) have been proposed, but their relative importance and temporal evolution during storm development remain unclear. In this study, machine learning algorithms are used to empirically analyze the governing mechanisms of AEW development based on 40 years of reanalysis data (1979-2018). We develop a computer vision framework utilizing convolutional neural networks (CNNs) and transformer architectures to identify developing AEWs (DAEWs) from non-developing AEWs (NDAEWs) based on wave-centered composites of key thermodynamic and dynamic variables for storm development. The model results suggest that the MVI framework is a critical factor for high classification accuracy in distinguishing developers from non-developers.</div>
+          </div>
         </div>
         <div class="pres-row">
           <div class="pres-side"><span class="pres-date">2026.01</span><span class="pres-badge poster">Poster</span></div>
-          <div><p class="pres-desc">106th AMS — 25th Conference on Atmospheric and Oceanic Fluid Dynamics. Houston, TX, USA.</p>
+          <div>
+            <p class="pres-desc">106th AMS — 25th Conference on Atmospheric and Oceanic Fluid Dynamics. Houston, TX, USA.</p>
+            <button class="abstract-btn" onclick="toggleAbstract(this)"><span class="ab-arrow">▶</span> Abstract</button>
+            <div class="abstract-panel">The energetic framework for the Intertropical Convergence Zone (ITCZ) links the time-mean, zonal-mean positions of the tropical rainbelt and the low-latitude zero crossing of the column-integrated meridional atmospheric moist static energy (MSE) flux---the ITCZ energy flux equator (EFE)---and neglects any meaningful role for transient eddies. Recent work, however, suggest that synoptic-scale moisture modes influence ITCZ strength and Hadley circulation variability on subseasonal timescales, by mixing MSE meridionally down the sharp gradients of column water vapor (CWV) that prevail on either side of the ITCZ. Using ERA5 reanalysis data, we reconsider how transient eddies, in aggregate and by specific modes, affect the mean ITCZ position through their MSE transports.</p>
+            <p>Climatological low-latitude meridional MSE flux by transient eddies is indeed qualitatively captured by a simple down-CWV-gradient approximation with uniform diffusivity, both zonally averaged and at most individual oceanic longitudes. Though its zero crossing, the transient eddy EFE, tracks the precipitation centroid better than the total does, the transient eddy MSE flux is generally an order of magnitude smaller than the total MSE flux. Combined with the down-moisture-gradient result and the mean overturning's known predominant role in shaping the mean CWV field, it is suggested that eddy MSE flux primarily respond to, rather than drive, time-mean tropical rainbelt migrations.</p>
+            <p>Cospectral analysis of the transient eddy meridional MSE flux highlights a strong signal in the deep tropics of westward-propagating disturbances with phase speeds near 5 m/s. Analysis in frequency-wavenumber space further points toward the broad tropical depression band that includes moisture modes. EOF analysis of fields filtered for this tropical depression band yields structures that migrate seasonally in tandem with the positions of both the ITCZ and the total and eddy EFE.</div>
           <div class="poster-wrap" onclick="openLb('https://hc-luo.github.io/images/AMS2026poster.png','AMS 2026 Poster')"><img class="poster-img" src="https://hc-luo.github.io/images/AMS2026poster.png" alt="AMS 2026 Poster"><span class="poster-hint">click to zoom ↗</span></div></div>
         </div>
         <div class="pres-row">
           <div class="pres-side"><span class="pres-date">2025.12</span><span class="pres-badge poster">Poster</span></div>
-          <div><p class="pres-desc">NeurIPS 2025 Climate Change AI Workshop (remote). San Diego, CA, USA. <a href="https://recorderv3.slideslive.com/?share=103856&s=89bbcedd-8bd8-4931-83f4-80f8178e2c91" target="_blank">[video ↗]</a></p>
+          <div>
+            <p class="pres-desc">NeurIPS 2025 Climate Change AI Workshop (remote). San Diego, CA, USA. <a href="https://recorderv3.slideslive.com/?share=103856&s=89bbcedd-8bd8-4931-83f4-80f8178e2c91" target="_blank">[video ↗]</a></p>
+            <button class="abstract-btn" onclick="toggleAbstract(this)"><span class="ab-arrow">▶</span> Abstract</button>
+            <div class="abstract-panel">African Easterly Waves (AEWs) are synoptic-scale atmospheric disturbances that serve as precursors to tropical cyclones (TCs) in the North Atlantic and North Africa. As climate changes, TC activities are increasingly frequent, leading to exponentially growing socio-economic losses. So understanding the physical mechanisms governing the tropical cyclogenesis (TCG) of AEWs remains a cru- cial problem. Competing theoretical frameworks, including baroclinic instability, barotropic instability, and moisture-vortex instability (MVI) have been proposed, but their relative importance and temporal evolution during storm development remain unclear. In this study, machine learning algorithms are used to empirically analyze the governing mechanisms of AEW development based on 40 years of reanalysis data (1979-2018). We develop a computer vision framework utilizing convolutional neural networks (CNNs) and transformer architectures to identify developing AEWs (DAEWs) from non-developing AEWs (NDAEWs) based on wave-centered composites of key thermodynamic and dynamic variables for storm development. The model results suggest that the MVI framework is a critical factor for high classification accuracy in distinguishing developers from non-developers.</div>
           <div class="poster-wrap" onclick="openLb('https://hc-luo.github.io/images/NeurIPS2025poster.png','NeurIPS 2025 Poster')"><img class="poster-img" src="https://hc-luo.github.io/images/NeurIPS2025poster.png" alt="NeurIPS 2025 Poster"><span class="poster-hint">click to zoom ↗</span></div></div>
         </div>
         <div class="pres-row">
           <div class="pres-side"><span class="pres-date">2024.12</span><span class="pres-badge poster">Poster</span></div>
-          <div><p class="pres-desc">AGU — Advances in Theoretical Understanding of Atmospheric Convection Across Scales session. Washington D.C., USA.</p>
+          <div>
+            <p class="pres-desc">AGU — Advances in Theoretical Understanding of Atmospheric Convection Across Scales session. Washington D.C., USA.</p>
+            <button class="abstract-btn" onclick="toggleAbstract(this)"><span class="ab-arrow">▶</span> Abstract</button>
+            <div class="abstract-panel">The energetic framework for the Intertropical Convergence Zone (ITCZ) position treats shifts in the tropical rainbelt as tightly linked to the column- integrated moist static energy (MSE) Jux by the time-mean, zonal-mean Hadley cells, with no role for MSE Juxes by transient eddies. While those transient eddy MSE Juxes have been shown to considerably inJuence the energetic framework’s predictions in both observations and models, mechanistic understanding of this eddy term remains lacking, both in aggregate and in the contributions of individual disturbance types.</p>
+            <p>We investigate tropical MSE 3uxes by transient eddies in ERA5 reanalysis data. As expected, eddy MSE 3uxes predominantly arise through latent energy due to moisture 3uxes. They are predominantly poleward and have little seasonality compared to the mean meridional circulation. Across much of the tropics, the eddy meridional MSE 3ux is well approximated by diffusion of latent energy down the local meridional column water vapor gradient. Using a spatially constant diffusivity works reasonably well for the annual mean and boreal winter, but in boreal summer in the broad Asian monsoon region the effective diffusivity is negative: the poleward eddy MSE 3ux is up the prevailing moisture gradient, with climatological moisture increasing poleward as part of the intense Indian and East Asian summer monsoon complexes.</p>
+            <p>To better understand the role of individual tropical wave modes, we compute the power spectrum of the deep-tropical eddy MSE 3ux. Tropical depression (TD)-like signals show up at frequency band 0.05-0.5 cpd in the symmetric pattern and below 0.2 cpd in the asymmetric pattern. Empirical orthogonal functions (EOFs) of Pltered v’*MSE’* peak to the north of column moisture of the TD-like disturbances in the African and PaciPc Easterly Wave regions, indicating enhanced poleward MSE 3ux at the northern edge of TD-like disturbances.</div>
           <div class="poster-wrap" onclick="openLb('https://hc-luo.github.io/images/AGU2024poster.png','AGU 2024 Poster')"><img class="poster-img" src="https://hc-luo.github.io/images/AGU2024poster.png" alt="AGU 2024 Poster"><span class="poster-hint">click to zoom ↗</span></div></div>
         </div>
         <div class="pres-row">
           <div class="pres-side"><span class="pres-date">2024.11</span><span class="pres-badge oral">Oral</span></div>
-          <div><p class="pres-desc">Departmental seminar, Earth and Atmospheric Sciences, City College of New York, New York, NY, USA.</p></div>
+          <div>
+            <p class="pres-desc">Departmental seminar, Earth and Atmospheric Sciences, City College of New York, New York, NY, USA.</p>
+          </div>
         </div>
         <div class="pres-row">
           <div class="pres-side"><span class="pres-date">2023.12</span><span class="pres-badge poster">Poster</span></div>
-          <div><p class="pres-desc">AGU — Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates session. San Francisco, CA, USA.</p>
+          <div>
+            <p class="pres-desc">AGU — Dynamics of the Large-Scale Atmospheric Circulation in Present and Future Climates session. San Francisco, CA, USA.</p>
+            <button class="abstract-btn" onclick="toggleAbstract(this)"><span class="ab-arrow">▶</span> Abstract</button>
+            <div class="abstract-panel">Monsoon low pressure systems (MLPSs) are a type of synoptic-scale wave that form near the Bay of Bengal with a surface wind speeds beneath less than 16 m s -1 . From June to September, these systems propagate westward, producing nearly half of the monsoonal precipitation was caused by MLPSs over India. “Moisture-vortex instability” (MVI) has been proposed as a potential growth mechanism of growth for these disturbances. In MVI, moisture is advected by the horizontal winds towards the center of the vortex, leading to enhanced convection and vortex growth. A recent work has posited that the vortex that grows from MVI extract latent energy from the background flow through a meridional eddy moisture flux. The anomalous moisture flux acts to weaken the mean moisture gradient. On the basis of linear regression analysis of MLPS activity, we find that increases in wave activity coincide with a equatorward eddy moisture flux while decreasing in the wave activity is coincident with a poleward eddy moisture flux. Furthermore, a weakening of the meridional moisture gradient over the South Asian monsoon is observed to be partly in- phase with the increased wave activity and strengthened mean meridional moisture gradient partly corresponds to decreased wave activity. The results indicate that MLPSs grow at the expense of South Asian monsoon when they grow from MVI.</div>
           <div class="poster-wrap" onclick="openLb('https://hc-luo.github.io/images/AGU2023poster.png','AGU 2023 Poster')"><img class="poster-img" src="https://hc-luo.github.io/images/AGU2023poster.png" alt="AGU 2023 Poster"><span class="poster-hint">click to zoom ↗</span></div></div>
         </div>
         <div class="pres-row">
           <div class="pres-side"><span class="pres-date">2023.01</span><span class="pres-badge oral">Oral</span></div>
-          <div><p class="pres-desc">103rd AMS — 11th Symposium on the Madden-Julian Oscillation and Sub-Seasonal Monsoon Variability. Denver, CO, USA.</p></div>
+          <div>
+            <p class="pres-desc">103rd AMS — 11th Symposium on the Madden-Julian Oscillation and Sub-Seasonal Monsoon Variability. Denver, CO, USA.</p>
+            <button class="abstract-btn" onclick="toggleAbstract(this)"><span class="ab-arrow">▶</span> Abstract</button>
+            <div class="abstract-panel">As one of the most prominent weather systems over the Indian Ocean, the Indian summer monsoon depression (MD) has been studied comprehensively over the past decades. However, the processes that govern the westward movement and growth of the MDs are not well-understood. To better understand these processes we created a MD index using bandpassed-Iltered precipitation data. Lag regression maps, vertical cross sections are used to document the distribution of moisture, moist static energy (MSE), horizontal and vertical motion and geopotential in these systems. It is shown that moisture governs the distribution of MSE and is in phase with anomalous precipitation, vertical motion and geopotential during the MD cycle. The MSE peaks at 200 hPa and 850 hPa during the growing stage and only at 200 hPa during the decaying stage. The MSE tendency is mainly controlled by the meridional advection of mean state MSE by the anomalous winds. When it comes to MSE maintenance, we Ind that vertical MSE advection and long-wave radiative heating cancel one another, and the growth and decay of the MSE anomalies is largely determined by horizontal MSE advection, suggesting that the MSE anomalies grow from moisture-vortex instability. In contrast, perturbation kinetic energy (PKE) is generated by barotropic energy conversion, horizontal advection of geopotential anomalies by anomalous winds and is consumed by friction. The structure, propagation and energetics of the regressed MDs are consistent with growth by both barotropic and moisture-vortex instabilities.</div>
+          </div>
         </div>
         <div class="pres-row">
           <div class="pres-side"><span class="pres-date">2022.12</span><span class="pres-badge poster">Poster</span></div>
           <div><p class="pres-desc">AGU — Atmosphere, Ocean, and Land Processes in the Maritime Continent and Indo-Pacific session. Chicago, IL, USA.</p>
+          <button class="abstract-btn" onclick="toggleAbstract(this)"><span class="ab-arrow">▶</span> Abstract</button>
+          <div class="abstract-panel">As one of the most prominent weather systems over the Indian Ocean, the Indian summer monsoon depression (MD) has been studied comprehensively over the past decades. However, the processes that govern the westward movement and growth of the MDs are not well-understood. To better understand these processes we created a MD index using bandpassed-Iltered precipitation data. Lag regression maps, vertical cross sections are used to document the distribution of moisture, moist static energy (MSE), horizontal and vertical motion and geopotential in these systems. It is shown that moisture governs the distribution of MSE and is in phase with anomalous precipitation, vertical motion and geopotential during the MD cycle. The MSE peaks at 200 hPa and 850 hPa during the growing stage and only at 200 hPa during the decaying stage. The MSE tendency is mainly controlled by the meridional advection of mean state MSE by the anomalous winds. When it comes to MSE maintenance, we Ind that vertical MSE advection and long-wave radiative heating cancel one another, and the growth and decay of the MSE anomalies is largely determined by horizontal MSE advection, suggesting that the MSE anomalies grow from moisture-vortex instability. In contrast, perturbation kinetic energy (PKE) is generated by barotropic energy conversion, horizontal advection of geopotential anomalies by anomalous winds and is consumed by friction. The structure, propagation and energetics of the regressed MDs are consistent with growth by both barotropic and moisture-vortex instabilities.</div>
           <div class="poster-wrap" onclick="openLb('https://hc-luo.github.io/images/AGU2022poster.png','AGU 2022 Poster')"><img class="poster-img" src="https://hc-luo.github.io/images/AGU2022poster.png" alt="AGU 2022 Poster"><span class="poster-hint">click to zoom ↗</span></div></div>
         </div>
         <div class="pres-row">
           <div class="pres-side"><span class="pres-date">2022.10</span><span class="pres-badge oral">Oral</span></div>
-          <div><p class="pres-desc">Departmental seminar, Atmospheric and Oceanic Sciences, University of Wisconsin, Madison, WI, USA. <a href="https://youtu.be/iA7BUL5gc94" target="_blank">[video ↗]</a></p></div>
+          <div>
+            <p class="pres-desc">Departmental seminar, Atmospheric and Oceanic Sciences, University of Wisconsin, Madison, WI, USA. <a href="https://youtu.be/iA7BUL5gc94" target="_blank">[video ↗]</a></p>
+          </div>
         </div>
         <div class="pres-row">
           <div class="pres-side"><span class="pres-date">2020.01</span><span class="pres-badge poster">Poster</span></div>
           <div><p class="pres-desc">100th AMS — 33rd Conference on Climate Variability and Change. Boston, MA, USA.</p>
+          <button class="abstract-btn" onclick="toggleAbstract(this)"><span class="ab-arrow">▶</span> Abstract</button>
+          <div class="abstract-panel">The processes that lead to the spatial and temporal evolution of the Bermuda High during July and August (JA) are investigated using linear regression analysis. The analysis is based on a Bermuda high index (BHI): the diﬀerence in normalized sea-level pressure (SLP) between Bermuda (40 N, 60 W) and New Orleans (30 N 90 W). Negative values of BHI indicate a westward expansion of the Bermuda High relative to its climatological-mean location, while positive values indicate contraction. Linear regression of the 500 hPa geopotential height based on the BHI reveals the existence of a Rossby wave train that extends zonally from the western-north Pacific to the eastern-north Atlantic. The troughs and ridges associated with this wave train are spatially collocated with the climatological-mean jet stream, indicating that the jet serves as their waveguide. The robustness of this pattern is verified through the use of empirical orthogonal teleconnections (EOTs). A leading EOT pattern is identified to be well correlated with the BHI, which is -0.54 and explains 4.1% of the JA 500 hPa height variance. The corresponding spatial pattern is identical to the regression maps based on the BHI and shows an active center over southeastern United States, where the anomalies in SLP associated with the BHI are the strongest. Based on these results, it is hypothesized that the EOT is a mode of natural variability. The pattern may be responsible for fluctuations in the Bermuda High during JA and may explain the occurrence of a midsummer drought in the southeastern US.</div>
           <div class="poster-wrap" onclick="openLb('https://hc-luo.github.io/images/AMS2020poster.png','AMS 2020 Poster')"><img class="poster-img" src="https://hc-luo.github.io/images/AMS2020poster.png" alt="AMS 2020 Poster"><span class="poster-hint">click to zoom ↗</span></div></div>
         </div>
       </div>
@@ -680,7 +749,13 @@ footer { border-top: 1px solid var(--bd); padding: 1.4rem 4rem 1.4rem 3rem; disp
   <span><a href="mailto:hluo@ccny.cuny.edu">hluo@ccny.cuny.edu</a></span>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+function toggleAbstract(btn) {
+  btn.classList.toggle('open');
+  const panel = btn.nextElementSibling;
+  panel.classList.toggle('open');
+}
+
 function show(name) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
@@ -711,7 +786,7 @@ if (urlSection) {
 
 function openLb(src, alt) {
   document.getElementById('lb-img').src = src;
-  document.getElementById('lb-img').alt = alt || '';
+  document.getElementById('lb-img').alt = alt;
   document.getElementById('lb').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -719,7 +794,9 @@ function closeLb() {
   document.getElementById('lb').classList.remove('open');
   document.body.style.overflow = '';
 }
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeLb();
+});
 </script>
 </body>
 </html>
